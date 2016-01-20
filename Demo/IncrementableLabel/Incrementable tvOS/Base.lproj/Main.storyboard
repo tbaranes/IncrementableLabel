@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IncrementableLabel_tvOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ptk-oA-vxK">
+                                <rect key="frame" x="0.0" y="472" width="1920" height="137"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rn-Ss-9uc" customClass="IncrementableLabel" customModule="IncrementableLabel_tvOS" customModuleProvider="target">
+                                        <rect key="frame" x="955" y="0.0" width="11" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVl-2c-HMP" customClass="IncrementableLabel" customModule="IncrementableLabel_tvOS" customModuleProvider="target">
+                                        <rect key="frame" x="955" y="29" width="11" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FaT-nH-0WT" customClass="IncrementableLabel" customModule="IncrementableLabel_tvOS" customModuleProvider="target">
+                                        <rect key="frame" x="955" y="58" width="11" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWl-Io-Ax7" customClass="IncrementableLabel" customModule="IncrementableLabel_tvOS" customModuleProvider="target">
+                                        <rect key="frame" x="955" y="87" width="11" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SgB-jc-3oc" customClass="IncrementableLabel" customModule="IncrementableLabel_tvOS" customModuleProvider="target">
+                                        <rect key="frame" x="955" y="116" width="11" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="zVl-2c-HMP" firstAttribute="top" secondItem="3rn-Ss-9uc" secondAttribute="bottom" constant="8" symbolic="YES" id="41N-Zt-Bjp"/>
+                                    <constraint firstItem="3rn-Ss-9uc" firstAttribute="top" secondItem="ptk-oA-vxK" secondAttribute="top" id="Imi-HK-Ndb"/>
+                                    <constraint firstItem="jWl-Io-Ax7" firstAttribute="top" secondItem="FaT-nH-0WT" secondAttribute="bottom" constant="8" symbolic="YES" id="Opx-3I-5iO"/>
+                                    <constraint firstAttribute="bottom" secondItem="SgB-jc-3oc" secondAttribute="bottom" id="Sjy-zJ-i87"/>
+                                    <constraint firstItem="SgB-jc-3oc" firstAttribute="top" secondItem="jWl-Io-Ax7" secondAttribute="bottom" constant="8" symbolic="YES" id="Xav-9N-EQ2"/>
+                                    <constraint firstItem="FaT-nH-0WT" firstAttribute="top" secondItem="zVl-2c-HMP" secondAttribute="bottom" constant="8" symbolic="YES" id="aCU-hv-TCD"/>
+                                    <constraint firstItem="FaT-nH-0WT" firstAttribute="centerX" secondItem="ptk-oA-vxK" secondAttribute="centerX" id="cZo-62-F92"/>
+                                    <constraint firstItem="3rn-Ss-9uc" firstAttribute="centerX" secondItem="ptk-oA-vxK" secondAttribute="centerX" id="gAf-GD-UVG"/>
+                                    <constraint firstItem="SgB-jc-3oc" firstAttribute="centerX" secondItem="ptk-oA-vxK" secondAttribute="centerX" id="nTk-MU-8HF"/>
+                                    <constraint firstItem="zVl-2c-HMP" firstAttribute="centerX" secondItem="ptk-oA-vxK" secondAttribute="centerX" id="ouU-jS-xij"/>
+                                    <constraint firstItem="jWl-Io-Ax7" firstAttribute="centerX" secondItem="ptk-oA-vxK" secondAttribute="centerX" id="uVb-hs-HyH"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOl-af-v6X">
+                                <rect key="frame" x="744" y="670" width="432" height="86"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Start incrementation"/>
+                                <connections>
+                                    <action selector="startIncrementationPressed:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="yzn-yq-oSp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rOl-af-v6X" firstAttribute="top" secondItem="ptk-oA-vxK" secondAttribute="bottom" constant="61" id="3Qz-8v-tZ7"/>
+                            <constraint firstItem="ptk-oA-vxK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3eL-xt-68w"/>
+                            <constraint firstAttribute="trailing" secondItem="ptk-oA-vxK" secondAttribute="trailing" id="EWx-oS-hDY"/>
+                            <constraint firstItem="rOl-af-v6X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HWX-gs-fZR"/>
+                            <constraint firstItem="ptk-oA-vxK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YPw-kB-HLR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label1" destination="3rn-Ss-9uc" id="imx-XR-rVs"/>
+                        <outlet property="label2" destination="zVl-2c-HMP" id="9ab-7G-4D3"/>
+                        <outlet property="label3" destination="FaT-nH-0WT" id="l3h-5f-9B1"/>
+                        <outlet property="label4" destination="jWl-Io-Ax7" id="Wjt-Hy-dN5"/>
+                        <outlet property="label5" destination="SgB-jc-3oc" id="DhD-Fe-S2q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

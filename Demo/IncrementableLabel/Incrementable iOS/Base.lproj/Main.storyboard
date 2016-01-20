@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IncrementableLabel_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cfd-qm-BMt">
+                                <rect key="frame" x="0.0" y="233" width="600" height="134.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWf-6S-6S8" customClass="IncrementableLabel" customModule="IncrementableLabel_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="279" y="0.0" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4d5-ra-WZD" customClass="IncrementableLabel" customModule="IncrementableLabel_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="279" y="28.5" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTH-0p-jWZ" customClass="IncrementableLabel" customModule="IncrementableLabel_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="279" y="57" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MR4-sY-rEa" customClass="IncrementableLabel" customModule="IncrementableLabel_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="295" y="85.5" width="10.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="45" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9j-Mp-q7e" customClass="IncrementableLabel" customModule="IncrementableLabel_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="289.5" y="114" width="21" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="KTH-0p-jWZ" firstAttribute="centerX" secondItem="Cfd-qm-BMt" secondAttribute="centerX" id="6Ia-5P-i8z"/>
+                                    <constraint firstItem="OWf-6S-6S8" firstAttribute="top" secondItem="Cfd-qm-BMt" secondAttribute="top" id="9Nr-vF-Yyu"/>
+                                    <constraint firstItem="4d5-ra-WZD" firstAttribute="centerX" secondItem="Cfd-qm-BMt" secondAttribute="centerX" id="CW7-ga-ugb"/>
+                                    <constraint firstItem="MR4-sY-rEa" firstAttribute="centerX" secondItem="Cfd-qm-BMt" secondAttribute="centerX" id="H2Z-TM-Seb"/>
+                                    <constraint firstItem="KTH-0p-jWZ" firstAttribute="top" secondItem="4d5-ra-WZD" secondAttribute="bottom" constant="8" symbolic="YES" id="JAX-YV-kuC"/>
+                                    <constraint firstItem="c9j-Mp-q7e" firstAttribute="top" secondItem="MR4-sY-rEa" secondAttribute="bottom" constant="8" symbolic="YES" id="Lh1-T0-kV1"/>
+                                    <constraint firstItem="c9j-Mp-q7e" firstAttribute="centerX" secondItem="Cfd-qm-BMt" secondAttribute="centerX" id="M6u-8e-KCq"/>
+                                    <constraint firstItem="MR4-sY-rEa" firstAttribute="top" secondItem="KTH-0p-jWZ" secondAttribute="bottom" constant="8" symbolic="YES" id="POi-VO-1P7"/>
+                                    <constraint firstItem="OWf-6S-6S8" firstAttribute="centerX" secondItem="Cfd-qm-BMt" secondAttribute="centerX" id="YK4-FC-4Vj"/>
+                                    <constraint firstItem="4d5-ra-WZD" firstAttribute="top" secondItem="OWf-6S-6S8" secondAttribute="bottom" constant="8" symbolic="YES" id="ZMZ-qs-Qdv"/>
+                                    <constraint firstItem="MR4-sY-rEa" firstAttribute="top" secondItem="OWf-6S-6S8" secondAttribute="bottom" constant="20" id="qeh-Vt-v8b"/>
+                                    <constraint firstAttribute="bottom" secondItem="c9j-Mp-q7e" secondAttribute="bottom" id="uj5-03-rYd"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="qeh-Vt-v8b"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJ8-T7-Ox2">
+                                <rect key="frame" x="277" y="427" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="startIncrementationPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g9W-xg-aAR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WJ8-T7-Ox2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Mf-41-4pG"/>
+                            <constraint firstItem="Cfd-qm-BMt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="EwZ-of-wDH"/>
+                            <constraint firstAttribute="trailing" secondItem="Cfd-qm-BMt" secondAttribute="trailing" id="GaN-SU-ewD"/>
+                            <constraint firstItem="WJ8-T7-Ox2" firstAttribute="top" secondItem="Cfd-qm-BMt" secondAttribute="bottom" constant="59.5" id="Gzf-tm-rpy"/>
+                            <constraint firstItem="Cfd-qm-BMt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZWQ-3C-drS"/>
+                            <constraint firstItem="Cfd-qm-BMt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ns5-sh-rKB"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ZWQ-3C-drS"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="label1" destination="OWf-6S-6S8" id="Hxj-0r-Ch0"/>
+                        <outlet property="label2" destination="4d5-ra-WZD" id="gMI-Uc-74q"/>
+                        <outlet property="label3" destination="KTH-0p-jWZ" id="3Hg-Zz-krG"/>
+                        <outlet property="label4" destination="MR4-sY-rEa" id="GeT-93-zHY"/>
+                        <outlet property="label5" destination="c9j-Mp-q7e" id="Qot-bY-3Hj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
