@@ -3,6 +3,7 @@
 [![Travis](https://img.shields.io/travis/recisio/IncrementableLabel.svg)](https://travis-ci.org/recisio/IncrementableLabel)
 ![Language](https://img.shields.io/badge/language-Swift%202-orange.svg)
 [![CocoaPods](https://img.shields.io/cocoapods/v/IncrementableLabel.svg?style=flat)](https://github.com/recisio/IncrementableLabel)
+[![Platform](https://img.shields.io/cocoapods/p/IncrementableLabel.svg?style=flat)](http://cocoadocs.org/docsets/IncrementableLabel)
 ![License](https://img.shields.io/github/license/recisio/IncrementableLabel?style=flat)
 
 IncrementableLabel is the easiest way to have incrementable numbers in an UILabel!
