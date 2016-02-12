@@ -24,7 +24,7 @@ Check the sample project for advanced usage
 - iOS 8.0+
 - tvOS 9.0+
 
-### Cocoapods Installation
+### CocoaPods Installation
 
 IncrementableLabel is available on CocoaPods. Just add the following to your Podfile:
 
