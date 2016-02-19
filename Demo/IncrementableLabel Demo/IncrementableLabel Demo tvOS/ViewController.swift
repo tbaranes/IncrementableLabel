@@ -47,7 +47,7 @@ class ViewController: UIViewController {
         }
         label4.incrementFromZero(1000, duration: 1)
         
-        label5.incrementationDidFinish = {
+        label5.incrementationCompletion = {
             self.label5.textColor = UIColor.greenColor()
         }
         label5.textColor = UIColor.blackColor()

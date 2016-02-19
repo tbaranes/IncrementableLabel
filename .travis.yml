@@ -4,9 +4,9 @@ notifications:
   email: false
 env:
   global:
-  - PROJECT=Demo/Demo.xcodeproj
-  - IOS_SCHEME="IncrementableLabel iOS"
-  - TVOS_SCHEME="IncrementableLabel tvOS"
+  - PROJECT="Demo/IncrementableLabel Demo.xcodeproj"
+  - IOS_SCHEME="IncrementableLabel Demo iOS"
+  - TVOS_SCHEME="IncrementableLabel Demo tvOS"
   - IOS_SDK=iphonesimulator9.2
   - TVOS_SDK=appletvsimulator9.1
   matrix:
