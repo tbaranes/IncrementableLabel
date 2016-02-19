@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E2C3AF291C4F8ACE00EB275B"
-               BuildableName = "IncrementableLabel tvOS.app"
-               BlueprintName = "IncrementableLabel tvOS"
-               ReferencedContainer = "container:IncrementableLabel.xcodeproj">
+               BlueprintIdentifier = "E2C3AF531C4FC06F00EB275B"
+               BuildableName = "IncrementableLabel Demo tvOS.app"
+               BlueprintName = "IncrementableLabel Demo tvOS"
+               ReferencedContainer = "container:IncrementableLabel Demo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E2C3AF291C4F8ACE00EB275B"
-            BuildableName = "IncrementableLabel tvOS.app"
-            BlueprintName = "IncrementableLabel tvOS"
-            ReferencedContainer = "container:IncrementableLabel.xcodeproj">
+            BlueprintIdentifier = "E2C3AF531C4FC06F00EB275B"
+            BuildableName = "IncrementableLabel Demo tvOS.app"
+            BlueprintName = "IncrementableLabel Demo tvOS"
+            ReferencedContainer = "container:IncrementableLabel Demo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E2C3AF291C4F8ACE00EB275B"
-            BuildableName = "IncrementableLabel tvOS.app"
-            BlueprintName = "IncrementableLabel tvOS"
-            ReferencedContainer = "container:IncrementableLabel.xcodeproj">
+            BlueprintIdentifier = "E2C3AF531C4FC06F00EB275B"
+            BuildableName = "IncrementableLabel Demo tvOS.app"
+            BlueprintName = "IncrementableLabel Demo tvOS"
+            ReferencedContainer = "container:IncrementableLabel Demo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E2C3AF291C4F8ACE00EB275B"
-            BuildableName = "IncrementableLabel tvOS.app"
-            BlueprintName = "IncrementableLabel tvOS"
-            ReferencedContainer = "container:IncrementableLabel.xcodeproj">
+            BlueprintIdentifier = "E2C3AF531C4FC06F00EB275B"
+            BuildableName = "IncrementableLabel Demo tvOS.app"
+            BlueprintName = "IncrementableLabel Demo tvOS"
+            ReferencedContainer = "container:IncrementableLabel Demo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

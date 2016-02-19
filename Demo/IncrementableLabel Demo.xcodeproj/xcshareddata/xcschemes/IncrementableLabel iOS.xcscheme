@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E298E3EA1C4F8A41009704B1"
-               BuildableName = "IncrementableLabel iOS.app"
-               BlueprintName = "IncrementableLabel iOS"
-               ReferencedContainer = "container:IncrementableLabel.xcodeproj">
+               BlueprintIdentifier = "E2C3AF3D1C4FBFB300EB275B"
+               BuildableName = "IncrementableLabel Demo iOS.app"
+               BlueprintName = "IncrementableLabel Demo iOS"
+               ReferencedContainer = "container:IncrementableLabel Demo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E298E3EA1C4F8A41009704B1"
-            BuildableName = "IncrementableLabel iOS.app"
-            BlueprintName = "IncrementableLabel iOS"
-            ReferencedContainer = "container:IncrementableLabel.xcodeproj">
+            BlueprintIdentifier = "E2C3AF3D1C4FBFB300EB275B"
+            BuildableName = "IncrementableLabel Demo iOS.app"
+            BlueprintName = "IncrementableLabel Demo iOS"
+            ReferencedContainer = "container:IncrementableLabel Demo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E298E3EA1C4F8A41009704B1"
-            BuildableName = "IncrementableLabel iOS.app"
-            BlueprintName = "IncrementableLabel iOS"
-            ReferencedContainer = "container:IncrementableLabel.xcodeproj">
+            BlueprintIdentifier = "E2C3AF3D1C4FBFB300EB275B"
+            BuildableName = "IncrementableLabel Demo iOS.app"
+            BlueprintName = "IncrementableLabel Demo iOS"
+            ReferencedContainer = "container:IncrementableLabel Demo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E298E3EA1C4F8A41009704B1"
-            BuildableName = "IncrementableLabel iOS.app"
-            BlueprintName = "IncrementableLabel iOS"
-            ReferencedContainer = "container:IncrementableLabel.xcodeproj">
+            BlueprintIdentifier = "E2C3AF3D1C4FBFB300EB275B"
+            BuildableName = "IncrementableLabel Demo iOS.app"
+            BlueprintName = "IncrementableLabel Demo iOS"
+            ReferencedContainer = "container:IncrementableLabel Demo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
