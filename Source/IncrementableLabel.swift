@@ -22,27 +22,27 @@
 
 import UIKit
 
-enum IncrementableLabelOptions {
+public enum IncrementableLabelOptions {
     case Linear, EaseIn, EaseOut, EaseInOut
 }
+
+public typealias StringFormatter = (Float) -> String
+public typealias AttributedTextFormatter = (Float) -> NSAttributedString
+public typealias IncrementableLabelCompletion = () -> Void
 
 public class IncrementableLabel: UILabel {
 
     // MARK: Properties
-
-    typealias StringFormatter = (Float) -> String
-    typealias AttributedTextFormatter = (Float) -> NSAttributedString
-    typealias IncrementableLabelCompletion = () -> Void
     
     /// An options indicating how you want to perform the incrementation:
-    internal var option: IncrementableLabelOptions = .Linear
+    public var option: IncrementableLabelOptions = .Linear
     
     /// A callback closure which permits a greater control on how the text (attributed or not) is formatted between each incrementation.
-    internal var stringFormatter: StringFormatter?
-    internal var attributedTextFormatter: AttributedTextFormatter?
+    public var stringFormatter: StringFormatter?
+    public var attributedTextFormatter: AttributedTextFormatter?
     
     /// A callback closure that will be called once the incrementation is finished
-    internal var incrementationCompletion: IncrementableLabelCompletion?
+    public var incrementationCompletion: IncrementableLabelCompletion?
 
     /// The rate used when an option is used.
     public var easingRate: Float = 3.0
