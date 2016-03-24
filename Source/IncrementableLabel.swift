@@ -103,7 +103,7 @@ public class IncrementableLabel: UILabel {
         self.timer = nil
         
         
-        let timer = NSTimer.scheduledTimerWithTimeInterval(1.0/30.0, target: self, selector: "incrementValue:", userInfo: nil, repeats: true)
+        let timer = NSTimer.scheduledTimerWithTimeInterval(1.0/30.0, target: self, selector: #selector(incrementValue(_:)), userInfo: nil, repeats: true)
         NSRunLoop.mainRunLoop().addTimer(timer, forMode: NSRunLoopCommonModes)
         NSRunLoop.mainRunLoop().addTimer(timer, forMode: UITrackingRunLoopMode)
         self.timer = timer
@@ -132,7 +132,7 @@ public class IncrementableLabel: UILabel {
         } else if let attributedTextClosure = attributedTextFormatter {
             attributedText = attributedTextClosure(currentValue())
         } else {
-            let formatRange = Range<String.Index>(start: format.startIndex, end: format.endIndex)
+            let formatRange = Range<String.Index>(format.startIndex..<format.endIndex)
             if format.rangeOfString("%(.*)(d|i)", options: .RegularExpressionSearch, range: formatRange) ==  formatRange {
                 text = String(format: format, Int(currentValue()))
             } else {
@@ -168,7 +168,8 @@ private extension IncrementableLabel {
         return 1.0 - powf(1.0 - value, easingRate)
     }
     
-    func nextValueForEaseInOutOption(var value: Float) -> Float {
+    func nextValueForEaseInOutOption(value: Float) -> Float {
+        var value = value
         let sign: Float = easingRate % 2 == 0 ?  -1 : 1
         value *= 2
         if value < 1 {
