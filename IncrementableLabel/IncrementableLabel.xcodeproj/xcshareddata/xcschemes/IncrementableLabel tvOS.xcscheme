@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E26980B21CDEA7A6001E9707"
-               BuildableName = "IncrementableLabel tvOS.framework"
+               BuildableName = "IncrementableLabel.framework"
                BlueprintName = "IncrementableLabel tvOS"
                ReferencedContainer = "container:IncrementableLabel.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E26980B21CDEA7A6001E9707"
-            BuildableName = "IncrementableLabel tvOS.framework"
+            BuildableName = "IncrementableLabel.framework"
             BlueprintName = "IncrementableLabel tvOS"
             ReferencedContainer = "container:IncrementableLabel.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E26980B21CDEA7A6001E9707"
-            BuildableName = "IncrementableLabel tvOS.framework"
+            BuildableName = "IncrementableLabel.framework"
             BlueprintName = "IncrementableLabel tvOS"
             ReferencedContainer = "container:IncrementableLabel.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E26980B21CDEA7A6001E9707"
-            BuildableName = "IncrementableLabel tvOS.framework"
+            BuildableName = "IncrementableLabel.framework"
             BlueprintName = "IncrementableLabel tvOS"
             ReferencedContainer = "container:IncrementableLabel.xcodeproj">
          </BuildableReference>

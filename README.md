@@ -121,9 +121,7 @@ Starts the incrementation from zero to `toValue`. The duration by default will b
 
 ## What's next
 
-- [ ] IBDesignable
-- [ ] Tests
-- Your features!
+- Any suggestions?
 
 ## Contribution
 

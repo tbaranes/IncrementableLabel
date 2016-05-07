@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E269808F1CDEA6DB001E9707"
-               BuildableName = "IncrementableLabel iOS.framework"
+               BuildableName = "IncrementableLabel.framework"
                BlueprintName = "IncrementableLabel iOS"
                ReferencedContainer = "container:IncrementableLabel.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E269808F1CDEA6DB001E9707"
-            BuildableName = "IncrementableLabel iOS.framework"
+            BuildableName = "IncrementableLabel.framework"
             BlueprintName = "IncrementableLabel iOS"
             ReferencedContainer = "container:IncrementableLabel.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E269808F1CDEA6DB001E9707"
-            BuildableName = "IncrementableLabel iOS.framework"
+            BuildableName = "IncrementableLabel.framework"
             BlueprintName = "IncrementableLabel iOS"
             ReferencedContainer = "container:IncrementableLabel.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E269808F1CDEA6DB001E9707"
-            BuildableName = "IncrementableLabel iOS.framework"
+            BuildableName = "IncrementableLabel.framework"
             BlueprintName = "IncrementableLabel iOS"
             ReferencedContainer = "container:IncrementableLabel.xcodeproj">
          </BuildableReference>
