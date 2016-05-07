@@ -47,12 +47,11 @@ class ViewController: UIViewController {
             return attributedString
         }
         label4.incrementFromZero(1000, duration: 1)
-        
-        label5.incrementationCompletion = {
+
+        label5.textColor = UIColor.blackColor()
+        label5.incrementFromZero(1000, duration: 1) {
             self.label5.textColor = UIColor.greenColor()
         }
-        label5.textColor = UIColor.blackColor()
-        label5.incrementFromZero(1000, duration: 1)
     }
     
 }

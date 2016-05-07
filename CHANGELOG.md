@@ -8,8 +8,9 @@ All notable changes to the project will be documented in this file.
 
 #### API breaking changes
 
-N/A
- 
+- Use `Double` instead of `Float`
+- The completion block is passed as a parameter in the `Increment***` methods
+
 #### Enhancements
 
 N/A
