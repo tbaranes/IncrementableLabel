@@ -18,30 +18,13 @@ N/A
 
 N/A
 
-## [1.1.0](https://github.com/tbaranes/FittableFontLabel/releases/tag/1.1.0) (25/04/2016)
-
-#### API breaking changes
-
-N/A
- 
-#### Enhancements
-
-- `FittableFontLabel` now support `topInset`, `leftInset`, `bottomInset`, `rightInset`
-
-#### Bugfixes
-
-- Fixed interface builder freeze
-
-## [1.0.1](https://github.com/tbaranes/FittableFontLabel/releases/tag/1.0.1) (29/03/2016)
+## [1.0.1](https://github.com/tbaranes/IncrementableLabel/releases/tag/1.0.1) (29/03/2016)
 
 #### Enhancements
 
-- Renaming the extension class
+- Makes all properties public
+- Swift 2.2 support
 
-#### Bugfixes
-
-- Fixed inspectable attributes for `FittableFontLabel`
-
-## [1.0.0](https://github.com/tbaranes/FittableFontLabel/releases/tag/1.0.0) (27/03/2016)
+## [1.0.0](https://github.com/tbaranes/IncrementableLabel/releases/tag/1.0.0) (27/03/2016)
 
 First version
