@@ -32,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E26980991CDEA6DB001E9707"
-               BuildableName = "IncrementableLabelTests.xctest"
-               BlueprintName = "IncrementableLabelTests"
+               BlueprintIdentifier = "E26980E91CDEAAB3001E9707"
+               BuildableName = "IncrementableLabel iOS Tests.xctest"
+               BlueprintName = "IncrementableLabel iOS Tests"
                ReferencedContainer = "container:IncrementableLabel.xcodeproj">
             </BuildableReference>
          </TestableReference>
