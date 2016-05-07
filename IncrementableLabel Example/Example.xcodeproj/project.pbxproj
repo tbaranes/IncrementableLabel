@@ -33,6 +33,20 @@
 			remoteGlobalIDString = E26980B31CDEA7A6001E9707;
 			remoteInfo = "IncrementableLabel tvOS";
 		};
+		E26981131CDEB17B001E9707 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E26980DC1CDEA8F4001E9707 /* IncrementableLabel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E26980EA1CDEAAB3001E9707;
+			remoteInfo = "IncrementableLabel iOS Tests";
+		};
+		E26981151CDEB17B001E9707 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E26980DC1CDEA8F4001E9707 /* IncrementableLabel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E26980FA1CDEAADF001E9707;
+			remoteInfo = "IncrementableLabel tvOS Tests";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -74,7 +88,9 @@
 			isa = PBXGroup;
 			children = (
 				E26980E21CDEA8F4001E9707 /* IncrementableLabel.framework */,
+				E26981141CDEB17B001E9707 /* IncrementableLabel iOS Tests.xctest */,
 				E26980E41CDEA8F4001E9707 /* IncrementableLabel.framework */,
+				E26981161CDEB17B001E9707 /* IncrementableLabel tvOS Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -218,6 +234,20 @@
 			fileType = wrapper.framework;
 			path = IncrementableLabel.framework;
 			remoteRef = E26980E31CDEA8F4001E9707 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E26981141CDEB17B001E9707 /* IncrementableLabel iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "IncrementableLabel iOS Tests.xctest";
+			remoteRef = E26981131CDEB17B001E9707 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E26981161CDEB17B001E9707 /* IncrementableLabel tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "IncrementableLabel tvOS Tests.xctest";
+			remoteRef = E26981151CDEB17B001E9707 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

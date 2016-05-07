@@ -30,7 +30,7 @@ public typealias StringFormatter = (Double) -> String
 public typealias AttributedTextFormatter = (Double) -> NSAttributedString
 public typealias IncrementableLabelCompletion = () -> Void
 
-public class IncrementableLabel: UILabel {
+@IBDesignable public class IncrementableLabel: UILabel {
 
     // MARK: Properties
     
@@ -42,10 +42,10 @@ public class IncrementableLabel: UILabel {
     public var attributedTextFormatter: AttributedTextFormatter?
     
     /// The rate used when an option is used.
-    public var easingRate: Double = 3.0
+    @IBInspectable public var easingRate: Double = 3.0
     
     /// The format is used to set the text in the label. You can set the format to %f in order to display decimals.
-    public var format: String = "%d" {
+    @IBInspectable public var format: String = "%d" {
         didSet {
             updateText()
         }

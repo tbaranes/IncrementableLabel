@@ -13,7 +13,7 @@ All notable changes to the project will be documented in this file.
 
 #### Enhancements
 
-N/A
+- `format` and `easingRate` are now inspectable from the interface builder
 
 #### Bugfixes
 
