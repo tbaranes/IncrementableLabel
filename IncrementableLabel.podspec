@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 
 s.name            	= "IncrementableLabel"
 s.module_name      	= "IncrementableLabel"
-s.version          	= "1.0.1"
+s.version          	= "1.1.0"
 s.summary          	= "IncrementableLabel is the easiest way to have incrementable numbers in an UILabel!"
 s.description      	= "IncrementableLabel is the easiest way to have incrementable numbers in an UILabel! Available on iOS and tVOS"
 s.homepage         	= "https://github.com/recisio/IncrementableLabel"
@@ -18,6 +18,6 @@ s.ios.deployment_target		= '8.0'
 s.tvos.deployment_target 	= '9.0'
 
 s.requires_arc 	   			= true
-s.source_files				= 'Source/*.swift'
+s.source_files				= 'Sources/*.swift'
 
 end

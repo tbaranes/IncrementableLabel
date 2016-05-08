@@ -1,0 +1,761 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E26980941CDEA6DB001E9707 /* IncrementableLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = E26980931CDEA6DB001E9707 /* IncrementableLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E26980AD1CDEA74C001E9707 /* IncrementableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26980AC1CDEA74C001E9707 /* IncrementableLabel.swift */; };
+		E26980B61CDEA7A6001E9707 /* IncrementableLabel tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = E26980B51CDEA7A6001E9707 /* IncrementableLabel tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E26980E51CDEA9DA001E9707 /* IncrementableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26980AC1CDEA74C001E9707 /* IncrementableLabel.swift */; };
+		E26980ED1CDEAAB3001E9707 /* IncrementableLabel_iOS_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26980EC1CDEAAB3001E9707 /* IncrementableLabel_iOS_Tests.swift */; };
+		E26980EF1CDEAAB3001E9707 /* IncrementableLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E26980901CDEA6DB001E9707 /* IncrementableLabel.framework */; };
+		E26980FD1CDEAADF001E9707 /* IncrementableLabel_tvOS_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26980FC1CDEAADF001E9707 /* IncrementableLabel_tvOS_Tests.swift */; };
+		E26980FF1CDEAADF001E9707 /* IncrementableLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E26980B31CDEA7A6001E9707 /* IncrementableLabel.framework */; };
+		E269810A1CDEAB4F001E9707 /* IncrementableLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26981091CDEAB4F001E9707 /* IncrementableLabelTests.swift */; };
+		E269810B1CDEAB4F001E9707 /* IncrementableLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26981091CDEAB4F001E9707 /* IncrementableLabelTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E26980F01CDEAAB3001E9707 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E26980871CDEA6DA001E9707 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E269808F1CDEA6DB001E9707;
+			remoteInfo = "IncrementableLabel iOS";
+		};
+		E26981001CDEAADF001E9707 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E26980871CDEA6DA001E9707 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E26980B21CDEA7A6001E9707;
+			remoteInfo = "IncrementableLabel tvOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E26980901CDEA6DB001E9707 /* IncrementableLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IncrementableLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E26980931CDEA6DB001E9707 /* IncrementableLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IncrementableLabel.h; sourceTree = "<group>"; };
+		E26980951CDEA6DB001E9707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E26980AC1CDEA74C001E9707 /* IncrementableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IncrementableLabel.swift; path = ../../Sources/IncrementableLabel.swift; sourceTree = "<group>"; };
+		E26980B31CDEA7A6001E9707 /* IncrementableLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IncrementableLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E26980B51CDEA7A6001E9707 /* IncrementableLabel tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IncrementableLabel tvOS.h"; sourceTree = "<group>"; };
+		E26980B71CDEA7A6001E9707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E26980EA1CDEAAB3001E9707 /* IncrementableLabel iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IncrementableLabel iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E26980EC1CDEAAB3001E9707 /* IncrementableLabel_iOS_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementableLabel_iOS_Tests.swift; sourceTree = "<group>"; };
+		E26980EE1CDEAAB3001E9707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E26980FA1CDEAADF001E9707 /* IncrementableLabel tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IncrementableLabel tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E26980FC1CDEAADF001E9707 /* IncrementableLabel_tvOS_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementableLabel_tvOS_Tests.swift; sourceTree = "<group>"; };
+		E26980FE1CDEAADF001E9707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E26981091CDEAB4F001E9707 /* IncrementableLabelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncrementableLabelTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E269808C1CDEA6DB001E9707 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E26980AF1CDEA7A6001E9707 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E26980E71CDEAAB3001E9707 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E26980EF1CDEAAB3001E9707 /* IncrementableLabel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E26980F71CDEAADF001E9707 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E26980FF1CDEAADF001E9707 /* IncrementableLabel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E26980861CDEA6DA001E9707 = {
+			isa = PBXGroup;
+			children = (
+				E26980AB1CDEA732001E9707 /* IncrementableLabel Core */,
+				E26980921CDEA6DB001E9707 /* IncrementableLabel iOS */,
+				E26980B41CDEA7A6001E9707 /* IncrementableLabel tvOS */,
+				E26980F51CDEAAC5001E9707 /* Tests */,
+				E26980911CDEA6DB001E9707 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E26980911CDEA6DB001E9707 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E26980901CDEA6DB001E9707 /* IncrementableLabel.framework */,
+				E26980B31CDEA7A6001E9707 /* IncrementableLabel.framework */,
+				E26980EA1CDEAAB3001E9707 /* IncrementableLabel iOS Tests.xctest */,
+				E26980FA1CDEAADF001E9707 /* IncrementableLabel tvOS Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E26980921CDEA6DB001E9707 /* IncrementableLabel iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E26980931CDEA6DB001E9707 /* IncrementableLabel.h */,
+				E26980951CDEA6DB001E9707 /* Info.plist */,
+			);
+			path = "IncrementableLabel iOS";
+			sourceTree = "<group>";
+		};
+		E26980AB1CDEA732001E9707 /* IncrementableLabel Core */ = {
+			isa = PBXGroup;
+			children = (
+				E26980AC1CDEA74C001E9707 /* IncrementableLabel.swift */,
+			);
+			name = "IncrementableLabel Core";
+			path = IncrementableLabel;
+			sourceTree = "<group>";
+		};
+		E26980B41CDEA7A6001E9707 /* IncrementableLabel tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				E26980B51CDEA7A6001E9707 /* IncrementableLabel tvOS.h */,
+				E26980B71CDEA7A6001E9707 /* Info.plist */,
+			);
+			path = "IncrementableLabel tvOS";
+			sourceTree = "<group>";
+		};
+		E26980EB1CDEAAB3001E9707 /* IncrementableLabel iOS Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E26980EC1CDEAAB3001E9707 /* IncrementableLabel_iOS_Tests.swift */,
+				E26980EE1CDEAAB3001E9707 /* Info.plist */,
+			);
+			path = "IncrementableLabel iOS Tests";
+			sourceTree = "<group>";
+		};
+		E26980F51CDEAAC5001E9707 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E26981051CDEAAEC001E9707 /* Core */,
+				E26980EB1CDEAAB3001E9707 /* IncrementableLabel iOS Tests */,
+				E26980FB1CDEAADF001E9707 /* IncrementableLabel tvOS Tests */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		E26980FB1CDEAADF001E9707 /* IncrementableLabel tvOS Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E26980FC1CDEAADF001E9707 /* IncrementableLabel_tvOS_Tests.swift */,
+				E26980FE1CDEAADF001E9707 /* Info.plist */,
+			);
+			path = "IncrementableLabel tvOS Tests";
+			sourceTree = "<group>";
+		};
+		E26981051CDEAAEC001E9707 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E26981091CDEAB4F001E9707 /* IncrementableLabelTests.swift */,
+			);
+			name = Core;
+			path = "IncrementableLabel Core Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E269808D1CDEA6DB001E9707 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E26980941CDEA6DB001E9707 /* IncrementableLabel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E26980B01CDEA7A6001E9707 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E26980B61CDEA7A6001E9707 /* IncrementableLabel tvOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E269808F1CDEA6DB001E9707 /* IncrementableLabel iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E26980A41CDEA6DB001E9707 /* Build configuration list for PBXNativeTarget "IncrementableLabel iOS" */;
+			buildPhases = (
+				E269808B1CDEA6DB001E9707 /* Sources */,
+				E269808C1CDEA6DB001E9707 /* Frameworks */,
+				E269808D1CDEA6DB001E9707 /* Headers */,
+				E269808E1CDEA6DB001E9707 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IncrementableLabel iOS";
+			productName = IncrementableLabel;
+			productReference = E26980901CDEA6DB001E9707 /* IncrementableLabel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E26980B21CDEA7A6001E9707 /* IncrementableLabel tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E26980C41CDEA7A6001E9707 /* Build configuration list for PBXNativeTarget "IncrementableLabel tvOS" */;
+			buildPhases = (
+				E26980AE1CDEA7A6001E9707 /* Sources */,
+				E26980AF1CDEA7A6001E9707 /* Frameworks */,
+				E26980B01CDEA7A6001E9707 /* Headers */,
+				E26980B11CDEA7A6001E9707 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IncrementableLabel tvOS";
+			productName = "IncrementableLabel tvOS";
+			productReference = E26980B31CDEA7A6001E9707 /* IncrementableLabel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E26980E91CDEAAB3001E9707 /* IncrementableLabel iOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E26980F21CDEAAB3001E9707 /* Build configuration list for PBXNativeTarget "IncrementableLabel iOS Tests" */;
+			buildPhases = (
+				E26980E61CDEAAB3001E9707 /* Sources */,
+				E26980E71CDEAAB3001E9707 /* Frameworks */,
+				E26980E81CDEAAB3001E9707 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E26980F11CDEAAB3001E9707 /* PBXTargetDependency */,
+			);
+			name = "IncrementableLabel iOS Tests";
+			productName = "IncrementableLabel iOS Tests";
+			productReference = E26980EA1CDEAAB3001E9707 /* IncrementableLabel iOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E26980F91CDEAADF001E9707 /* IncrementableLabel tvOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E26981021CDEAADF001E9707 /* Build configuration list for PBXNativeTarget "IncrementableLabel tvOS Tests" */;
+			buildPhases = (
+				E26980F61CDEAADF001E9707 /* Sources */,
+				E26980F71CDEAADF001E9707 /* Frameworks */,
+				E26980F81CDEAADF001E9707 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E26981011CDEAADF001E9707 /* PBXTargetDependency */,
+			);
+			name = "IncrementableLabel tvOS Tests";
+			productName = "IncrementableLabel tvOS Tests";
+			productReference = E26980FA1CDEAADF001E9707 /* IncrementableLabel tvOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E26980871CDEA6DA001E9707 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Recisio;
+				TargetAttributes = {
+					E269808F1CDEA6DB001E9707 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					E26980B21CDEA7A6001E9707 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					E26980E91CDEAAB3001E9707 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					E26980F91CDEAADF001E9707 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = E269808A1CDEA6DA001E9707 /* Build configuration list for PBXProject "IncrementableLabel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E26980861CDEA6DA001E9707;
+			productRefGroup = E26980911CDEA6DB001E9707 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E269808F1CDEA6DB001E9707 /* IncrementableLabel iOS */,
+				E26980E91CDEAAB3001E9707 /* IncrementableLabel iOS Tests */,
+				E26980B21CDEA7A6001E9707 /* IncrementableLabel tvOS */,
+				E26980F91CDEAADF001E9707 /* IncrementableLabel tvOS Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E269808E1CDEA6DB001E9707 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E26980B11CDEA7A6001E9707 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E26980E81CDEAAB3001E9707 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E26980F81CDEAADF001E9707 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E269808B1CDEA6DB001E9707 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E26980AD1CDEA74C001E9707 /* IncrementableLabel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E26980AE1CDEA7A6001E9707 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E26980E51CDEA9DA001E9707 /* IncrementableLabel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E26980E61CDEAAB3001E9707 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E269810A1CDEAB4F001E9707 /* IncrementableLabelTests.swift in Sources */,
+				E26980ED1CDEAAB3001E9707 /* IncrementableLabel_iOS_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E26980F61CDEAADF001E9707 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E269810B1CDEAB4F001E9707 /* IncrementableLabelTests.swift in Sources */,
+				E26980FD1CDEAADF001E9707 /* IncrementableLabel_tvOS_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E26980F11CDEAAB3001E9707 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E269808F1CDEA6DB001E9707 /* IncrementableLabel iOS */;
+			targetProxy = E26980F01CDEAAB3001E9707 /* PBXContainerItemProxy */;
+		};
+		E26981011CDEAADF001E9707 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E26980B21CDEA7A6001E9707 /* IncrementableLabel tvOS */;
+			targetProxy = E26981001CDEAADF001E9707 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E26980A21CDEA6DB001E9707 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E26980A31CDEA6DB001E9707 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E26980A51CDEA6DB001E9707 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/IncrementableLabel iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.recisio.IncrementableLabel;
+				PRODUCT_NAME = IncrementableLabel;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E26980A61CDEA6DB001E9707 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/IncrementableLabel iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.recisio.IncrementableLabel;
+				PRODUCT_NAME = IncrementableLabel;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E26980C51CDEA7A6001E9707 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "IncrementableLabel tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.recisio.IncrementableLabel-tvOS";
+				PRODUCT_NAME = IncrementableLabel;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		E26980C61CDEA7A6001E9707 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "IncrementableLabel tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.recisio.IncrementableLabel-tvOS";
+				PRODUCT_NAME = IncrementableLabel;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		E26980F31CDEAAB3001E9707 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "IncrementableLabel iOS Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.recisio.IncrementableLabel-iOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E26980F41CDEAAB3001E9707 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "IncrementableLabel iOS Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.recisio.IncrementableLabel-iOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E26981031CDEAADF001E9707 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "IncrementableLabel tvOS Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.recisio.IncrementableLabel-tvOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		E26981041CDEAADF001E9707 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "IncrementableLabel tvOS Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.recisio.IncrementableLabel-tvOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Release;
+		};
+		E269810C1CDEAB82001E9707 /* ReleaseTest */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = ReleaseTest;
+		};
+		E269810D1CDEAB82001E9707 /* ReleaseTest */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/IncrementableLabel iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.recisio.IncrementableLabel;
+				PRODUCT_NAME = IncrementableLabel;
+				SKIP_INSTALL = YES;
+			};
+			name = ReleaseTest;
+		};
+		E269810E1CDEAB82001E9707 /* ReleaseTest */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "IncrementableLabel iOS Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.recisio.IncrementableLabel-iOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = ReleaseTest;
+		};
+		E269810F1CDEAB82001E9707 /* ReleaseTest */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "IncrementableLabel tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.recisio.IncrementableLabel-tvOS";
+				PRODUCT_NAME = IncrementableLabel;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = ReleaseTest;
+		};
+		E26981101CDEAB82001E9707 /* ReleaseTest */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "IncrementableLabel tvOS Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.recisio.IncrementableLabel-tvOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = ReleaseTest;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E269808A1CDEA6DA001E9707 /* Build configuration list for PBXProject "IncrementableLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E26980A21CDEA6DB001E9707 /* Debug */,
+				E26980A31CDEA6DB001E9707 /* Release */,
+				E269810C1CDEAB82001E9707 /* ReleaseTest */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E26980A41CDEA6DB001E9707 /* Build configuration list for PBXNativeTarget "IncrementableLabel iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E26980A51CDEA6DB001E9707 /* Debug */,
+				E26980A61CDEA6DB001E9707 /* Release */,
+				E269810D1CDEAB82001E9707 /* ReleaseTest */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E26980C41CDEA7A6001E9707 /* Build configuration list for PBXNativeTarget "IncrementableLabel tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E26980C51CDEA7A6001E9707 /* Debug */,
+				E26980C61CDEA7A6001E9707 /* Release */,
+				E269810F1CDEAB82001E9707 /* ReleaseTest */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E26980F21CDEAAB3001E9707 /* Build configuration list for PBXNativeTarget "IncrementableLabel iOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E26980F31CDEAAB3001E9707 /* Debug */,
+				E26980F41CDEAAB3001E9707 /* Release */,
+				E269810E1CDEAB82001E9707 /* ReleaseTest */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E26981021CDEAADF001E9707 /* Build configuration list for PBXNativeTarget "IncrementableLabel tvOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E26981031CDEAADF001E9707 /* Debug */,
+				E26981041CDEAADF001E9707 /* Release */,
+				E26981101CDEAB82001E9707 /* ReleaseTest */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E26980871CDEA6DA001E9707 /* Project object */;
+}

@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E25676091C4FCCF200F9E2D4 /* IncrementableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3AF241C4F8AA600EB275B /* IncrementableLabel.swift */; };
-		E256760A1C4FCCF300F9E2D4 /* IncrementableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3AF241C4F8AA600EB275B /* IncrementableLabel.swift */; };
 		E2C3AF571C4FC06F00EB275B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3AF561C4FC06F00EB275B /* AppDelegate.swift */; };
 		E2C3AF591C4FC06F00EB275B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3AF581C4FC06F00EB275B /* ViewController.swift */; };
 		E2C3AF5C1C4FC06F00EB275B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C3AF5A1C4FC06F00EB275B /* Main.storyboard */; };
@@ -20,16 +18,47 @@
 		E2C3AF671C4FC11900EB275B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E298E3F71C4F8A41009704B1 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E26980E11CDEA8F4001E9707 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E26980DC1CDEA8F4001E9707 /* IncrementableLabel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E26980901CDEA6DB001E9707;
+			remoteInfo = "IncrementableLabel iOS";
+		};
+		E26980E31CDEA8F4001E9707 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E26980DC1CDEA8F4001E9707 /* IncrementableLabel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E26980B31CDEA7A6001E9707;
+			remoteInfo = "IncrementableLabel tvOS";
+		};
+		E26981131CDEB17B001E9707 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E26980DC1CDEA8F4001E9707 /* IncrementableLabel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E26980EA1CDEAAB3001E9707;
+			remoteInfo = "IncrementableLabel iOS Tests";
+		};
+		E26981151CDEB17B001E9707 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E26980DC1CDEA8F4001E9707 /* IncrementableLabel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E26980FA1CDEAADF001E9707;
+			remoteInfo = "IncrementableLabel tvOS Tests";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		E26980DC1CDEA8F4001E9707 /* IncrementableLabel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IncrementableLabel.xcodeproj; path = ../IncrementableLabel/IncrementableLabel.xcodeproj; sourceTree = "<group>"; };
 		E298E3EE1C4F8A41009704B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E298E3F01C4F8A41009704B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E298E3F31C4F8A41009704B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E298E3F51C4F8A41009704B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E298E3F81C4F8A41009704B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E298E3FA1C4F8A41009704B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2C3AF241C4F8AA600EB275B /* IncrementableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncrementableLabel.swift; sourceTree = "<group>"; };
-		E2C3AF3E1C4FBFB300EB275B /* IncrementableLabel Demo iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IncrementableLabel Demo iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2C3AF541C4FC06F00EB275B /* IncrementableLabel Demo tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IncrementableLabel Demo tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2C3AF3E1C4FBFB300EB275B /* iOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2C3AF541C4FC06F00EB275B /* tvOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tvOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C3AF561C4FC06F00EB275B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2C3AF581C4FC06F00EB275B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E2C3AF5B1C4FC06F00EB275B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,26 +84,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E26980DD1CDEA8F4001E9707 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E26980E21CDEA8F4001E9707 /* IncrementableLabel.framework */,
+				E26981141CDEB17B001E9707 /* IncrementableLabel iOS Tests.xctest */,
+				E26980E41CDEA8F4001E9707 /* IncrementableLabel.framework */,
+				E26981161CDEB17B001E9707 /* IncrementableLabel tvOS Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		E298E3E21C4F8A41009704B1 = {
 			isa = PBXGroup;
 			children = (
-				E2C3AF231C4F8A9100EB275B /* Source */,
-				E298E3ED1C4F8A41009704B1 /* IncrementableLabel Demo iOS */,
-				E2C3AF551C4FC06F00EB275B /* IncrementableLabel Demo tvOS */,
+				E298E3ED1C4F8A41009704B1 /* iOS Example */,
+				E2C3AF551C4FC06F00EB275B /* tvOS Example */,
 				E298E3EC1C4F8A41009704B1 /* Products */,
+				E26980DC1CDEA8F4001E9707 /* IncrementableLabel.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
 		E298E3EC1C4F8A41009704B1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E2C3AF3E1C4FBFB300EB275B /* IncrementableLabel Demo iOS.app */,
-				E2C3AF541C4FC06F00EB275B /* IncrementableLabel Demo tvOS.app */,
+				E2C3AF3E1C4FBFB300EB275B /* iOS Example.app */,
+				E2C3AF541C4FC06F00EB275B /* tvOS Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E298E3ED1C4F8A41009704B1 /* IncrementableLabel Demo iOS */ = {
+		E298E3ED1C4F8A41009704B1 /* iOS Example */ = {
 			isa = PBXGroup;
 			children = (
 				E298E3EE1C4F8A41009704B1 /* AppDelegate.swift */,
@@ -84,20 +124,11 @@
 				E298E3F71C4F8A41009704B1 /* LaunchScreen.storyboard */,
 				E298E3FA1C4F8A41009704B1 /* Info.plist */,
 			);
-			name = "IncrementableLabel Demo iOS";
-			path = "IncrementableLabel Demo/IncrementableLabel Demo iOS";
+			name = "iOS Example";
+			path = "Example/iOS Example";
 			sourceTree = "<group>";
 		};
-		E2C3AF231C4F8A9100EB275B /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				E2C3AF241C4F8AA600EB275B /* IncrementableLabel.swift */,
-			);
-			name = Source;
-			path = ../Source;
-			sourceTree = "<group>";
-		};
-		E2C3AF551C4FC06F00EB275B /* IncrementableLabel Demo tvOS */ = {
+		E2C3AF551C4FC06F00EB275B /* tvOS Example */ = {
 			isa = PBXGroup;
 			children = (
 				E2C3AF561C4FC06F00EB275B /* AppDelegate.swift */,
@@ -106,16 +137,16 @@
 				E2C3AF5D1C4FC06F00EB275B /* Assets.xcassets */,
 				E2C3AF5F1C4FC06F00EB275B /* Info.plist */,
 			);
-			name = "IncrementableLabel Demo tvOS";
-			path = "IncrementableLabel Demo/IncrementableLabel Demo tvOS";
+			name = "tvOS Example";
+			path = "Example/tvOS Example";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E2C3AF3D1C4FBFB300EB275B /* IncrementableLabel Demo iOS */ = {
+		E2C3AF3D1C4FBFB300EB275B /* iOS Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E2C3AF4D1C4FBFB300EB275B /* Build configuration list for PBXNativeTarget "IncrementableLabel Demo iOS" */;
+			buildConfigurationList = E2C3AF4D1C4FBFB300EB275B /* Build configuration list for PBXNativeTarget "iOS Example" */;
 			buildPhases = (
 				E2C3AF3A1C4FBFB300EB275B /* Sources */,
 				E2C3AF3B1C4FBFB300EB275B /* Frameworks */,
@@ -125,14 +156,14 @@
 			);
 			dependencies = (
 			);
-			name = "IncrementableLabel Demo iOS";
+			name = "iOS Example";
 			productName = IncrementableLabel;
-			productReference = E2C3AF3E1C4FBFB300EB275B /* IncrementableLabel Demo iOS.app */;
+			productReference = E2C3AF3E1C4FBFB300EB275B /* iOS Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E2C3AF531C4FC06F00EB275B /* IncrementableLabel Demo tvOS */ = {
+		E2C3AF531C4FC06F00EB275B /* tvOS Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E2C3AF601C4FC06F00EB275B /* Build configuration list for PBXNativeTarget "IncrementableLabel Demo tvOS" */;
+			buildConfigurationList = E2C3AF601C4FC06F00EB275B /* Build configuration list for PBXNativeTarget "tvOS Example" */;
 			buildPhases = (
 				E2C3AF501C4FC06F00EB275B /* Sources */,
 				E2C3AF511C4FC06F00EB275B /* Frameworks */,
@@ -142,9 +173,9 @@
 			);
 			dependencies = (
 			);
-			name = "IncrementableLabel Demo tvOS";
+			name = "tvOS Example";
 			productName = IncrementableLabel;
-			productReference = E2C3AF541C4FC06F00EB275B /* IncrementableLabel Demo tvOS.app */;
+			productReference = E2C3AF541C4FC06F00EB275B /* tvOS Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -165,7 +196,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E298E3E61C4F8A41009704B1 /* Build configuration list for PBXProject "IncrementableLabel Demo" */;
+			buildConfigurationList = E298E3E61C4F8A41009704B1 /* Build configuration list for PBXProject "Example" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -176,13 +207,50 @@
 			mainGroup = E298E3E21C4F8A41009704B1;
 			productRefGroup = E298E3EC1C4F8A41009704B1 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E26980DD1CDEA8F4001E9707 /* Products */;
+					ProjectRef = E26980DC1CDEA8F4001E9707 /* IncrementableLabel.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
-				E2C3AF3D1C4FBFB300EB275B /* IncrementableLabel Demo iOS */,
-				E2C3AF531C4FC06F00EB275B /* IncrementableLabel Demo tvOS */,
+				E2C3AF3D1C4FBFB300EB275B /* iOS Example */,
+				E2C3AF531C4FC06F00EB275B /* tvOS Example */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E26980E21CDEA8F4001E9707 /* IncrementableLabel.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = IncrementableLabel.framework;
+			remoteRef = E26980E11CDEA8F4001E9707 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E26980E41CDEA8F4001E9707 /* IncrementableLabel.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = IncrementableLabel.framework;
+			remoteRef = E26980E31CDEA8F4001E9707 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E26981141CDEB17B001E9707 /* IncrementableLabel iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "IncrementableLabel iOS Tests.xctest";
+			remoteRef = E26981131CDEB17B001E9707 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E26981161CDEB17B001E9707 /* IncrementableLabel tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "IncrementableLabel tvOS Tests.xctest";
+			remoteRef = E26981151CDEB17B001E9707 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E2C3AF3C1C4FBFB300EB275B /* Resources */ = {
@@ -212,7 +280,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2C3AF641C4FC0ED00EB275B /* ViewController.swift in Sources */,
-				E256760A1C4FCCF300F9E2D4 /* IncrementableLabel.swift in Sources */,
 				E2C3AF631C4FC0ED00EB275B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,7 +289,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2C3AF591C4FC06F00EB275B /* ViewController.swift in Sources */,
-				E25676091C4FCCF200F9E2D4 /* IncrementableLabel.swift in Sources */,
 				E2C3AF571C4FC06F00EB275B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,7 +409,7 @@
 		E2C3AF4E1C4FBFB300EB275B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = "$(SRCROOT)/IncrementableLabel Demo/IncrementableLabel Demo iOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Example/iOS Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.recisio.IncrementableLabel;
@@ -354,7 +420,7 @@
 		E2C3AF4F1C4FBFB300EB275B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = "$(SRCROOT)/IncrementableLabel Demo/IncrementableLabel Demo iOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Example/iOS Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.recisio.IncrementableLabel;
@@ -365,7 +431,7 @@
 		E2C3AF611C4FC06F00EB275B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = "$(SRCROOT)/IncrementableLabel Demo/IncrementableLabel Demo tvOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Example/tvOS Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.recisio.IncrementableLabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -378,7 +444,7 @@
 		E2C3AF621C4FC06F00EB275B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = "$(SRCROOT)/IncrementableLabel Demo/IncrementableLabel Demo tvOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Example/tvOS Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.recisio.IncrementableLabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -391,7 +457,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E298E3E61C4F8A41009704B1 /* Build configuration list for PBXProject "IncrementableLabel Demo" */ = {
+		E298E3E61C4F8A41009704B1 /* Build configuration list for PBXProject "Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E298E3FB1C4F8A41009704B1 /* Debug */,
@@ -400,7 +466,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E2C3AF4D1C4FBFB300EB275B /* Build configuration list for PBXNativeTarget "IncrementableLabel Demo iOS" */ = {
+		E2C3AF4D1C4FBFB300EB275B /* Build configuration list for PBXNativeTarget "iOS Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E2C3AF4E1C4FBFB300EB275B /* Debug */,
@@ -409,7 +475,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E2C3AF601C4FC06F00EB275B /* Build configuration list for PBXNativeTarget "IncrementableLabel Demo tvOS" */ = {
+		E2C3AF601C4FC06F00EB275B /* Build configuration list for PBXNativeTarget "tvOS Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E2C3AF611C4FC06F00EB275B /* Debug */,

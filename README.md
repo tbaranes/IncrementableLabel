@@ -73,14 +73,6 @@ var attributedTextFormatter: AttributedTextFormatter?
 
 A callback closure which permits a greater control on how the text (attributed or not) is formatted between each incrementation.
 
-
-```swift
-typealias IncrementableLabelCompletion = () -> Void
-var incrementationCompletion: IncrementableLabelCompletion?
-```
-
-A callback closure that will be called once the incrementation is finished.
-
 ```swift
 var easingRate: Float = 3.0
 ```
@@ -102,28 +94,26 @@ public func currentValue() -> Float
 The label's value during the incrementation 
 
 ```swift
-func incrementFromValue(fromValue: Float, toValue: Float, duration: Float = 0.3)
+func incrementFromValue(fromValue: Float, toValue: Float, duration: Float = 0.3, completion: IncrementableLabelCompletion? = nil)
 ```
 
 Starts the incrementation `fromValue` to `toValue`. The duration by default will be 0.3
 
 ```swift
-func incrementFromCurrentValueToValue(toValue: Float, duration: Float = 0.3)
+func incrementFromCurrentValueToValue(toValue: Float, duration: Float = 0.3, completion: IncrementableLabelCompletion? = nil)
 ```
 
 Starts the incrementation from the current value to `toValue`. The duration by default will be 0.3
 
 ```swift
-func incrementFromZero(toValue: Float, duration: Float = 0.3)
+func incrementFromZero(toValue: Float, duration: Float = 0.3, completion: IncrementableLabelCompletion? = nil)
 ```
 
 Starts the incrementation from zero to `toValue`. The duration by default will be 0.3
 
 ## What's next
 
-- [ ] IBDesignable
-- [ ] Tests
-- Your features!
+- Any suggestions?
 
 ## Contribution
 

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import IncrementableLabel
 
 class ViewController: UIViewController {
 
@@ -17,14 +18,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var label3: IncrementableLabel!
     @IBOutlet weak var label4: IncrementableLabel!
     @IBOutlet weak var label5: IncrementableLabel!
-
+    
     // MARK: Life cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
-
+    
     // MARK: IBAction
     
     @IBAction func startIncrementationPressed(sender: AnyObject) {
@@ -46,13 +47,12 @@ class ViewController: UIViewController {
             return attributedString
         }
         label4.incrementFromZero(1000, duration: 1)
-        
-        label5.incrementationCompletion = {
+
+        label5.textColor = UIColor.blackColor()
+        label5.incrementFromZero(1000, duration: 1) {
             self.label5.textColor = UIColor.greenColor()
         }
-        label5.textColor = UIColor.blackColor()
-        label5.incrementFromZero(1000, duration: 1)        
     }
-
+    
 }
 
