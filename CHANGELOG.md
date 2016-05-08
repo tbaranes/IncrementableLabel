@@ -22,7 +22,7 @@ N/A
 
 #### API breaking changes
 
-- Use `Double` instead of `Float`
+- Use `Double` instead of `Float` - [#4](https://github.com/recisio/IncrementableLabel/issues/4)
 - The completion block is passed as a parameter in the `Increment***` methods
 
 #### Enhancements
