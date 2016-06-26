@@ -80,21 +80,21 @@ public typealias IncrementableLabelCompletion = () -> Void
 extension IncrementableLabel {
 
     /** Starts the incrementation fromValue to toValue */
-    public func incrementFromValue(fromValue: Double, toValue: Double, duration: Double = 0.3, completion: IncrementableLabelCompletion? = nil) {
+    public func increment(fromValue: Double, toValue: Double, duration: Double = 0.3, completion: IncrementableLabelCompletion? = nil) {
         self.completion = completion
-        startIncrementationFromValue(fromValue: fromValue, toValue: toValue, duration: duration)
+        startIncrementation(fromValue: fromValue, toValue: toValue, duration: duration)
     }
     
     /** Starts the incrementation from the current value to toValue */
-    public func incrementFromCurrentValueToValue(toValue: Double, duration: Double = 0.3, completion: IncrementableLabelCompletion? = nil) {
+    public func incrementFromCurrentValue(toValue: Double, duration: Double = 0.3, completion: IncrementableLabelCompletion? = nil) {
         self.completion = completion
-        startIncrementationFromValue(fromValue: currentValue(), toValue: toValue, duration: duration)
+        startIncrementation(fromValue: currentValue(), toValue: toValue, duration: duration)
     }
     
     /** Starts the incrementation from zero to toValue */
     public func incrementFromZero(toValue: Double, duration: Double = 0.3, completion: IncrementableLabelCompletion? = nil) {
         self.completion = completion
-        startIncrementationFromValue(fromValue: 0.0, toValue: toValue, duration: duration)
+        startIncrementation(fromValue: 0.0, toValue: toValue, duration: duration)
     }
     
 }
@@ -103,7 +103,7 @@ extension IncrementableLabel {
 
 private extension IncrementableLabel {
     
-    func startIncrementationFromValue(fromValue: Double, toValue: Double, duration: Double) {
+    func startIncrementation(fromValue: Double, toValue: Double, duration: Double) {
         self.fromValue = fromValue
         self.toValue = toValue
         self.duration = Double(duration)
@@ -113,13 +113,13 @@ private extension IncrementableLabel {
         self.timer?.invalidate()
         self.timer = nil
 
-        let timer = Timer.scheduledTimer(timeInterval: 1.0/30.0, target: self, selector: #selector(incrementValue(sender:)), userInfo: nil, repeats: true)
+        let timer = Timer.scheduledTimer(timeInterval: 1.0 / 30.0, target: self, selector: #selector(incrementValue), userInfo: nil, repeats: true)
         RunLoop.main().add(timer, forMode: RunLoopMode.commonModes)
         RunLoop.main().add(timer, forMode: RunLoopMode(rawValue: UITrackingRunLoopMode))
         self.timer = timer
     }
 
-    @objc func incrementValue(sender: Timer) {
+    @objc func incrementValue() {
         let now = NSDate.timeIntervalSinceReferenceDate()
         progress += now - lastUpdate
         lastUpdate = now

@@ -29,16 +29,16 @@ class ViewController: UIViewController {
     // MARK: IBAction
     
     @IBAction func startIncrementationPressed(sender: AnyObject) {
-        label1.incrementFromValue(fromValue: 0, toValue: 100, duration: 3)
+        label1.increment(fromValue: 0, toValue: 100, duration: 3)
         
         label2.format = "%f"
-        label2.incrementFromValue(fromValue: 0.0, toValue: 100.0, duration: 3)
+        label2.increment(fromValue: 0.0, toValue: 100.0, duration: 3)
         
         label3.option = .EaseInOut
         label3.stringFormatter = { value in
             return String(format: "EaseInOutAnimation: %d", Int(value))
         }
-        label3.incrementFromValue(fromValue: 0.0, toValue: 100.0, duration: 3)
+        label3.increment(fromValue: 0.0, toValue: 100.0, duration: 3)
         
         label4.option = .EaseOut
         label4.attributedTextFormatter = { value in
