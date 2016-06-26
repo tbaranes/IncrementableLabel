@@ -8,15 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		E26980941CDEA6DB001E9707 /* IncrementableLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = E26980931CDEA6DB001E9707 /* IncrementableLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E26980AD1CDEA74C001E9707 /* IncrementableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26980AC1CDEA74C001E9707 /* IncrementableLabel.swift */; };
 		E26980B61CDEA7A6001E9707 /* IncrementableLabel tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = E26980B51CDEA7A6001E9707 /* IncrementableLabel tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E26980E51CDEA9DA001E9707 /* IncrementableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26980AC1CDEA74C001E9707 /* IncrementableLabel.swift */; };
 		E26980ED1CDEAAB3001E9707 /* IncrementableLabel_iOS_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26980EC1CDEAAB3001E9707 /* IncrementableLabel_iOS_Tests.swift */; };
 		E26980EF1CDEAAB3001E9707 /* IncrementableLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E26980901CDEA6DB001E9707 /* IncrementableLabel.framework */; };
 		E26980FD1CDEAADF001E9707 /* IncrementableLabel_tvOS_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26980FC1CDEAADF001E9707 /* IncrementableLabel_tvOS_Tests.swift */; };
 		E26980FF1CDEAADF001E9707 /* IncrementableLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E26980B31CDEA7A6001E9707 /* IncrementableLabel.framework */; };
 		E269810A1CDEAB4F001E9707 /* IncrementableLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26981091CDEAB4F001E9707 /* IncrementableLabelTests.swift */; };
 		E269810B1CDEAB4F001E9707 /* IncrementableLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26981091CDEAB4F001E9707 /* IncrementableLabelTests.swift */; };
+		E2773E901D20117A00365CDF /* IncrementableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2773E8F1D20117A00365CDF /* IncrementableLabel.swift */; };
+		E2773E911D20117A00365CDF /* IncrementableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2773E8F1D20117A00365CDF /* IncrementableLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,6 @@
 		E26980901CDEA6DB001E9707 /* IncrementableLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IncrementableLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26980931CDEA6DB001E9707 /* IncrementableLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IncrementableLabel.h; sourceTree = "<group>"; };
 		E26980951CDEA6DB001E9707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E26980AC1CDEA74C001E9707 /* IncrementableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IncrementableLabel.swift; path = ../../Sources/IncrementableLabel.swift; sourceTree = "<group>"; };
 		E26980B31CDEA7A6001E9707 /* IncrementableLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IncrementableLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26980B51CDEA7A6001E9707 /* IncrementableLabel tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IncrementableLabel tvOS.h"; sourceTree = "<group>"; };
 		E26980B71CDEA7A6001E9707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		E26980FC1CDEAADF001E9707 /* IncrementableLabel_tvOS_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementableLabel_tvOS_Tests.swift; sourceTree = "<group>"; };
 		E26980FE1CDEAADF001E9707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E26981091CDEAB4F001E9707 /* IncrementableLabelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncrementableLabelTests.swift; sourceTree = "<group>"; };
+		E2773E8F1D20117A00365CDF /* IncrementableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncrementableLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +90,7 @@
 		E26980861CDEA6DA001E9707 = {
 			isa = PBXGroup;
 			children = (
-				E26980AB1CDEA732001E9707 /* IncrementableLabel Core */,
+				E2773E8E1D20117A00365CDF /* Core */,
 				E26980921CDEA6DB001E9707 /* IncrementableLabel iOS */,
 				E26980B41CDEA7A6001E9707 /* IncrementableLabel tvOS */,
 				E26980F51CDEAAC5001E9707 /* Tests */,
@@ -116,15 +116,6 @@
 				E26980951CDEA6DB001E9707 /* Info.plist */,
 			);
 			path = "IncrementableLabel iOS";
-			sourceTree = "<group>";
-		};
-		E26980AB1CDEA732001E9707 /* IncrementableLabel Core */ = {
-			isa = PBXGroup;
-			children = (
-				E26980AC1CDEA74C001E9707 /* IncrementableLabel.swift */,
-			);
-			name = "IncrementableLabel Core";
-			path = IncrementableLabel;
 			sourceTree = "<group>";
 		};
 		E26980B41CDEA7A6001E9707 /* IncrementableLabel tvOS */ = {
@@ -171,6 +162,15 @@
 			);
 			name = Core;
 			path = "IncrementableLabel Core Tests";
+			sourceTree = "<group>";
+		};
+		E2773E8E1D20117A00365CDF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E2773E8F1D20117A00365CDF /* IncrementableLabel.swift */,
+			);
+			name = Core;
+			path = ../Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,14 +274,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Recisio;
 				TargetAttributes = {
 					E269808F1CDEA6DB001E9707 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 					E26980B21CDEA7A6001E9707 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 					E26980E91CDEAAB3001E9707 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -347,7 +349,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E26980AD1CDEA74C001E9707 /* IncrementableLabel.swift in Sources */,
+				E2773E901D20117A00365CDF /* IncrementableLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E26980E51CDEA9DA001E9707 /* IncrementableLabel.swift in Sources */,
+				E2773E911D20117A00365CDF /* IncrementableLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +502,7 @@
 				PRODUCT_NAME = IncrementableLabel;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -518,12 +521,15 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.recisio.IncrementableLabel;
 				PRODUCT_NAME = IncrementableLabel;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		E26980C51CDEA7A6001E9707 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -535,6 +541,8 @@
 				PRODUCT_NAME = IncrementableLabel;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -543,6 +551,7 @@
 		E26980C61CDEA7A6001E9707 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -554,6 +563,8 @@
 				PRODUCT_NAME = IncrementableLabel;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -576,6 +587,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.recisio.IncrementableLabel-iOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -599,6 +611,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.recisio.IncrementableLabel-tvOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TVOS_DEPLOYMENT_TARGET = 9.2;
 			};
 			name = Release;
@@ -661,6 +674,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.recisio.IncrementableLabel;
 				PRODUCT_NAME = IncrementableLabel;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = ReleaseTest;
 		};
@@ -671,12 +686,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.recisio.IncrementableLabel-iOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = ReleaseTest;
 		};
 		E269810F1CDEAB82001E9707 /* ReleaseTest */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -688,6 +705,8 @@
 				PRODUCT_NAME = IncrementableLabel;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -701,6 +720,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.recisio.IncrementableLabel-tvOS-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TVOS_DEPLOYMENT_TARGET = 9.2;
 			};
 			name = ReleaseTest;
@@ -736,6 +756,7 @@
 				E269810F1CDEAB82001E9707 /* ReleaseTest */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E26980F21CDEAAB3001E9707 /* Build configuration list for PBXNativeTarget "IncrementableLabel iOS Tests" */ = {
 			isa = XCConfigurationList;
@@ -745,6 +766,7 @@
 				E269810E1CDEAB82001E9707 /* ReleaseTest */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E26981021CDEAADF001E9707 /* Build configuration list for PBXNativeTarget "IncrementableLabel tvOS Tests" */ = {
 			isa = XCConfigurationList;
@@ -754,6 +776,7 @@
 				E26981101CDEAB82001E9707 /* ReleaseTest */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
