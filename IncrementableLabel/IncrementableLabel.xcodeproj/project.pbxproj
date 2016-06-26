@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		E26980941CDEA6DB001E9707 /* IncrementableLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = E26980931CDEA6DB001E9707 /* IncrementableLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E26980B61CDEA7A6001E9707 /* IncrementableLabel tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = E26980B51CDEA7A6001E9707 /* IncrementableLabel tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E26980ED1CDEAAB3001E9707 /* IncrementableLabel_iOS_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26980EC1CDEAAB3001E9707 /* IncrementableLabel_iOS_Tests.swift */; };
 		E26980EF1CDEAAB3001E9707 /* IncrementableLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E26980901CDEA6DB001E9707 /* IncrementableLabel.framework */; };
-		E26980FD1CDEAADF001E9707 /* IncrementableLabel_tvOS_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26980FC1CDEAADF001E9707 /* IncrementableLabel_tvOS_Tests.swift */; };
 		E26980FF1CDEAADF001E9707 /* IncrementableLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E26980B31CDEA7A6001E9707 /* IncrementableLabel.framework */; };
 		E269810A1CDEAB4F001E9707 /* IncrementableLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26981091CDEAB4F001E9707 /* IncrementableLabelTests.swift */; };
 		E269810B1CDEAB4F001E9707 /* IncrementableLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26981091CDEAB4F001E9707 /* IncrementableLabelTests.swift */; };
@@ -44,10 +42,8 @@
 		E26980B51CDEA7A6001E9707 /* IncrementableLabel tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IncrementableLabel tvOS.h"; sourceTree = "<group>"; };
 		E26980B71CDEA7A6001E9707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E26980EA1CDEAAB3001E9707 /* IncrementableLabel iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IncrementableLabel iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E26980EC1CDEAAB3001E9707 /* IncrementableLabel_iOS_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementableLabel_iOS_Tests.swift; sourceTree = "<group>"; };
 		E26980EE1CDEAAB3001E9707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E26980FA1CDEAADF001E9707 /* IncrementableLabel tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IncrementableLabel tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E26980FC1CDEAADF001E9707 /* IncrementableLabel_tvOS_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementableLabel_tvOS_Tests.swift; sourceTree = "<group>"; };
 		E26980FE1CDEAADF001E9707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E26981091CDEAB4F001E9707 /* IncrementableLabelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncrementableLabelTests.swift; sourceTree = "<group>"; };
 		E2773E8F1D20117A00365CDF /* IncrementableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncrementableLabel.swift; sourceTree = "<group>"; };
@@ -130,7 +126,6 @@
 		E26980EB1CDEAAB3001E9707 /* IncrementableLabel iOS Tests */ = {
 			isa = PBXGroup;
 			children = (
-				E26980EC1CDEAAB3001E9707 /* IncrementableLabel_iOS_Tests.swift */,
 				E26980EE1CDEAAB3001E9707 /* Info.plist */,
 			);
 			path = "IncrementableLabel iOS Tests";
@@ -149,7 +144,6 @@
 		E26980FB1CDEAADF001E9707 /* IncrementableLabel tvOS Tests */ = {
 			isa = PBXGroup;
 			children = (
-				E26980FC1CDEAADF001E9707 /* IncrementableLabel_tvOS_Tests.swift */,
 				E26980FE1CDEAADF001E9707 /* Info.plist */,
 			);
 			path = "IncrementableLabel tvOS Tests";
@@ -203,6 +197,7 @@
 				E269808C1CDEA6DB001E9707 /* Frameworks */,
 				E269808D1CDEA6DB001E9707 /* Headers */,
 				E269808E1CDEA6DB001E9707 /* Resources */,
+				E2773E971D20127E00365CDF /* Run Script - ⚠️ SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -221,6 +216,7 @@
 				E26980AF1CDEA7A6001E9707 /* Frameworks */,
 				E26980B01CDEA7A6001E9707 /* Headers */,
 				E26980B11CDEA7A6001E9707 /* Resources */,
+				E2773E981D20128600365CDF /* Run Script - ⚠️ SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -344,6 +340,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E2773E971D20127E00365CDF /* Run Script - ⚠️ SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script - ⚠️ SwiftLint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		E2773E981D20128600365CDF /* Run Script - ⚠️ SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script - ⚠️ SwiftLint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E269808B1CDEA6DB001E9707 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -366,7 +393,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E269810A1CDEAB4F001E9707 /* IncrementableLabelTests.swift in Sources */,
-				E26980ED1CDEAAB3001E9707 /* IncrementableLabel_iOS_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +401,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E269810B1CDEAB4F001E9707 /* IncrementableLabelTests.swift in Sources */,
-				E26980FD1CDEAADF001E9707 /* IncrementableLabel_tvOS_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,19 +10,19 @@ import XCTest
 @testable import IncrementableLabel
 
 class IncrementableLabelTests: XCTestCase {
-    
+
     override func setUp() {
         super.setUp()
     }
-    
+
     override func tearDown() {
         super.tearDown()
     }
-    
+
 }
 
-// MARK: - 
+// MARK: -
 
 extension IncrementableLabel {
-    
+
 }
