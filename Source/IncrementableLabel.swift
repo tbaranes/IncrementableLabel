@@ -108,19 +108,19 @@ private extension IncrementableLabel {
         self.toValue = toValue
         self.duration = Double(duration)
         progress = 0
-        lastUpdate = NSDate.timeIntervalSinceReferenceDate()
+        lastUpdate = NSDate.timeIntervalSinceReferenceDate
         
         self.timer?.invalidate()
         self.timer = nil
 
         let timer = Timer.scheduledTimer(timeInterval: 1.0 / 30.0, target: self, selector: #selector(incrementValue), userInfo: nil, repeats: true)
-        RunLoop.main().add(timer, forMode: RunLoopMode.commonModes)
-        RunLoop.main().add(timer, forMode: RunLoopMode(rawValue: UITrackingRunLoopMode))
+        RunLoop.main.add(timer, forMode: RunLoopMode.commonModes)
+        RunLoop.main.add(timer, forMode: RunLoopMode(rawValue: UITrackingRunLoopMode))
         self.timer = timer
     }
 
     @objc func incrementValue() {
-        let now = NSDate.timeIntervalSinceReferenceDate()
+        let now = NSDate.timeIntervalSinceReferenceDate
         progress += now - lastUpdate
         lastUpdate = now
         if progress >= duration {
@@ -142,7 +142,7 @@ private extension IncrementableLabel {
             attributedText = attributedTextClosure(currentValue())
         } else {
             let formatRange = Range<String.Index>(format.startIndex..<format.endIndex)
-            if format.range(of: "%(.*)(d|i)", options: .regularExpressionSearch, range: formatRange) ==  formatRange {
+            if format.range(of: "%(.*)(d|i)", options: .regularExpression, range: formatRange) ==  formatRange {
                 text = String(format: format, Int(currentValue()))
             } else {
                 text = String(format: format, currentValue())
