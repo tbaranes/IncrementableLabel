@@ -48,9 +48,9 @@ class ViewController: UIViewController {
         }
         label4.incrementFromZero(toValue: 1000, duration: 1)
         
-        label5.textColor = UIColor.black()
+        label5.textColor = UIColor.black
         label5.incrementFromZero(toValue: 1000, duration: 1) {
-            self.label5.textColor = UIColor.green()
+            self.label5.textColor = UIColor.green
         }
     }
 

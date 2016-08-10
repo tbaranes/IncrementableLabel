@@ -27,7 +27,7 @@ public enum IncrementableLabelOptions {
 }
 
 public typealias StringFormatter = (Double) -> String
-public typealias AttributedTextFormatter = (Double) -> AttributedString
+public typealias AttributedTextFormatter = (Double) -> NSAttributedString
 public typealias IncrementableLabelCompletion = () -> Void
 
 @IBDesignable public class IncrementableLabel: UILabel {
@@ -115,7 +115,7 @@ private extension IncrementableLabel {
 
         let timer = Timer.scheduledTimer(timeInterval: 1.0 / 30.0, target: self, selector: #selector(incrementValue), userInfo: nil, repeats: true)
         RunLoop.main.add(timer, forMode: RunLoopMode.commonModes)
-        RunLoop.main.add(timer, forMode: RunLoopMode(rawValue: UITrackingRunLoopMode))
+        RunLoop.main.add(timer, forMode: RunLoopMode.UITrackingRunLoopMode)
         self.timer = timer
     }
 
