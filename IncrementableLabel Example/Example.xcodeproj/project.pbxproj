@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E21DC8B41D5E56C800424556 /* IncrementableLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E26980E21CDEA8F4001E9707 /* IncrementableLabel.framework */; };
+		E21DC8B51D5E56C800424556 /* IncrementableLabel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E26980E21CDEA8F4001E9707 /* IncrementableLabel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E21DC8B91D5E56CD00424556 /* IncrementableLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E26980E41CDEA8F4001E9707 /* IncrementableLabel.framework */; };
+		E21DC8BA1D5E56CD00424556 /* IncrementableLabel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E26980E41CDEA8F4001E9707 /* IncrementableLabel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E2C3AF571C4FC06F00EB275B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3AF561C4FC06F00EB275B /* AppDelegate.swift */; };
 		E2C3AF591C4FC06F00EB275B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3AF581C4FC06F00EB275B /* ViewController.swift */; };
 		E2C3AF5C1C4FC06F00EB275B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C3AF5A1C4FC06F00EB275B /* Main.storyboard */; };
@@ -19,6 +23,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		E21DC8B61D5E56C900424556 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E26980DC1CDEA8F4001E9707 /* IncrementableLabel.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E269808F1CDEA6DB001E9707;
+			remoteInfo = "IncrementableLabel iOS";
+		};
+		E21DC8BB1D5E56CD00424556 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E26980DC1CDEA8F4001E9707 /* IncrementableLabel.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E26980B21CDEA7A6001E9707;
+			remoteInfo = "IncrementableLabel tvOS";
+		};
 		E26980E11CDEA8F4001E9707 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E26980DC1CDEA8F4001E9707 /* IncrementableLabel.xcodeproj */;
@@ -49,6 +67,31 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E21DC8B81D5E56C900424556 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E21DC8B51D5E56C800424556 /* IncrementableLabel.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E21DC8BD1D5E56CD00424556 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E21DC8BA1D5E56CD00424556 /* IncrementableLabel.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		E26980DC1CDEA8F4001E9707 /* IncrementableLabel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IncrementableLabel.xcodeproj; path = ../IncrementableLabel/IncrementableLabel.xcodeproj; sourceTree = "<group>"; };
 		E298E3EE1C4F8A41009704B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E21DC8B41D5E56C800424556 /* IncrementableLabel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E21DC8B91D5E56CD00424556 /* IncrementableLabel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,10 +196,12 @@
 				E2C3AF3A1C4FBFB300EB275B /* Sources */,
 				E2C3AF3B1C4FBFB300EB275B /* Frameworks */,
 				E2C3AF3C1C4FBFB300EB275B /* Resources */,
+				E21DC8B81D5E56C900424556 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E21DC8B71D5E56C900424556 /* PBXTargetDependency */,
 			);
 			name = "iOS Example";
 			productName = IncrementableLabel;
@@ -168,10 +215,12 @@
 				E2C3AF501C4FC06F00EB275B /* Sources */,
 				E2C3AF511C4FC06F00EB275B /* Frameworks */,
 				E2C3AF521C4FC06F00EB275B /* Resources */,
+				E21DC8BD1D5E56CD00424556 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E21DC8BC1D5E56CD00424556 /* PBXTargetDependency */,
 			);
 			name = "tvOS Example";
 			productName = IncrementableLabel;
@@ -297,6 +346,19 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		E21DC8B71D5E56C900424556 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "IncrementableLabel iOS";
+			targetProxy = E21DC8B61D5E56C900424556 /* PBXContainerItemProxy */;
+		};
+		E21DC8BC1D5E56CD00424556 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "IncrementableLabel tvOS";
+			targetProxy = E21DC8BB1D5E56CD00424556 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		E298E3F21C4F8A41009704B1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -411,6 +473,7 @@
 		E2C3AF4E1C4FBFB300EB275B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Example/iOS Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -423,6 +486,7 @@
 		E2C3AF4F1C4FBFB300EB275B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Example/iOS Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -436,6 +500,7 @@
 		E2C3AF611C4FC06F00EB275B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Example/tvOS Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.recisio.IncrementableLabel;
@@ -450,6 +515,7 @@
 		E2C3AF621C4FC06F00EB275B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Example/tvOS Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.recisio.IncrementableLabel;
