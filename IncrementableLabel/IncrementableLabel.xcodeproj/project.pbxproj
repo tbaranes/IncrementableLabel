@@ -13,8 +13,8 @@
 		E26980FF1CDEAADF001E9707 /* IncrementableLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E26980B31CDEA7A6001E9707 /* IncrementableLabel.framework */; };
 		E269810A1CDEAB4F001E9707 /* IncrementableLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26981091CDEAB4F001E9707 /* IncrementableLabelTests.swift */; };
 		E269810B1CDEAB4F001E9707 /* IncrementableLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26981091CDEAB4F001E9707 /* IncrementableLabelTests.swift */; };
-		E2773E901D20117A00365CDF /* IncrementableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2773E8F1D20117A00365CDF /* IncrementableLabel.swift */; };
-		E2773E911D20117A00365CDF /* IncrementableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2773E8F1D20117A00365CDF /* IncrementableLabel.swift */; };
+		E27C4AD01D678FC3004FFBA4 /* IncrementableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27C4ACF1D678FC3004FFBA4 /* IncrementableLabel.swift */; };
+		E27C4AD11D678FC3004FFBA4 /* IncrementableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27C4ACF1D678FC3004FFBA4 /* IncrementableLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +46,7 @@
 		E26980FA1CDEAADF001E9707 /* IncrementableLabel tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IncrementableLabel tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26980FE1CDEAADF001E9707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E26981091CDEAB4F001E9707 /* IncrementableLabelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncrementableLabelTests.swift; sourceTree = "<group>"; };
-		E2773E8F1D20117A00365CDF /* IncrementableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncrementableLabel.swift; sourceTree = "<group>"; };
+		E27C4ACF1D678FC3004FFBA4 /* IncrementableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncrementableLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +86,7 @@
 		E26980861CDEA6DA001E9707 = {
 			isa = PBXGroup;
 			children = (
-				E2773E8E1D20117A00365CDF /* Core */,
+				E27C4ACE1D678FC3004FFBA4 /* Sources */,
 				E26980921CDEA6DB001E9707 /* IncrementableLabel iOS */,
 				E26980B41CDEA7A6001E9707 /* IncrementableLabel tvOS */,
 				E26980F51CDEAAC5001E9707 /* Tests */,
@@ -158,13 +158,13 @@
 			path = "IncrementableLabel Core Tests";
 			sourceTree = "<group>";
 		};
-		E2773E8E1D20117A00365CDF /* Core */ = {
+		E27C4ACE1D678FC3004FFBA4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				E2773E8F1D20117A00365CDF /* IncrementableLabel.swift */,
+				E27C4ACF1D678FC3004FFBA4 /* IncrementableLabel.swift */,
 			);
-			name = Core;
-			path = ../Source;
+			name = Sources;
+			path = ../Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -376,7 +376,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2773E901D20117A00365CDF /* IncrementableLabel.swift in Sources */,
+				E27C4AD01D678FC3004FFBA4 /* IncrementableLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,7 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2773E911D20117A00365CDF /* IncrementableLabel.swift in Sources */,
+				E27C4AD11D678FC3004FFBA4 /* IncrementableLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,6 +598,7 @@
 		E26980F31CDEAAB3001E9707 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "IncrementableLabel iOS Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.recisio.IncrementableLabel-iOS-Tests";
@@ -608,6 +609,7 @@
 		E26980F41CDEAAB3001E9707 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "IncrementableLabel iOS Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.recisio.IncrementableLabel-iOS-Tests";
@@ -619,6 +621,7 @@
 		E26981031CDEAADF001E9707 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "IncrementableLabel tvOS Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.recisio.IncrementableLabel-tvOS-Tests";
@@ -631,6 +634,7 @@
 		E26981041CDEAADF001E9707 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "IncrementableLabel tvOS Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.recisio.IncrementableLabel-tvOS-Tests";
@@ -707,6 +711,7 @@
 		E269810E1CDEAB82001E9707 /* ReleaseTest */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "IncrementableLabel iOS Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.recisio.IncrementableLabel-iOS-Tests";
@@ -740,6 +745,7 @@
 		E26981101CDEAB82001E9707 /* ReleaseTest */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "IncrementableLabel tvOS Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.recisio.IncrementableLabel-tvOS-Tests";
