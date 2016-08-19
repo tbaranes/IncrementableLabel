@@ -53,14 +53,14 @@ public typealias IncrementableLabelCompletion = () -> Void
     
     // MARK: Private properties
     
-    private var timer: Timer?
-    private var fromValue: Double = 0.0
-    private var toValue: Double = 0.0
+    fileprivate var timer: Timer?
+    fileprivate var fromValue: Double = 0.0
+    fileprivate var toValue: Double = 0.0
     
-    private var duration: TimeInterval = 0.3
-    private var progress: TimeInterval = 0.0
-    private var lastUpdate: TimeInterval = 0.0
-    private var completion: IncrementableLabelCompletion?
+    fileprivate var duration: TimeInterval = 0.3
+    fileprivate var progress: TimeInterval = 0.0
+    fileprivate var lastUpdate: TimeInterval = 0.0
+    fileprivate var completion: IncrementableLabelCompletion?
     
     // MARK: Getter
     
@@ -101,7 +101,7 @@ extension IncrementableLabel {
 
 // MARK: - 
 
-private extension IncrementableLabel {
+fileprivate extension IncrementableLabel {
     
     func startIncrementation(fromValue: Double, toValue: Double, duration: Double) {
         self.fromValue = fromValue
