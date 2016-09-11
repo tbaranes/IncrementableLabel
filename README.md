@@ -1,7 +1,7 @@
 # IncrementableLabel
 
 [![Travis](https://img.shields.io/travis/recisio/IncrementableLabel.svg)](https://travis-ci.org/recisio/IncrementableLabel)
-![Language](https://img.shields.io/badge/language-Swift%202.2-orange.svg)
+![Language](https://img.shields.io/badge/language-Swift%203.0-orange.svg)
 [![CocoaPods](https://img.shields.io/cocoapods/v/IncrementableLabel.svg?style=flat)](https://github.com/recisio/IncrementableLabel)
 [![Platform](https://img.shields.io/cocoapods/p/IncrementableLabel.svg?style=flat)](http://cocoadocs.org/docsets/IncrementableLabel)
 ![License](https://img.shields.io/github/license/recisio/IncrementableLabel?style=flat)
@@ -94,13 +94,13 @@ public func currentValue() -> Float
 The label's value during the incrementation 
 
 ```swift
-func incrementFromValue(fromValue: Float, toValue: Float, duration: Float = 0.3, completion: IncrementableLabelCompletion? = nil)
+func increment(fromValue: Float, toValue: Float, duration: Float = 0.3, completion: IncrementableLabelCompletion? = nil)
 ```
 
 Starts the incrementation `fromValue` to `toValue`. The duration by default will be 0.3
 
 ```swift
-func incrementFromCurrentValueToValue(toValue: Float, duration: Float = 0.3, completion: IncrementableLabelCompletion? = nil)
+func incrementFromCurrentValue(toValue: Float, duration: Float = 0.3, completion: IncrementableLabelCompletion? = nil)
 ```
 
 Starts the incrementation from the current value to `toValue`. The duration by default will be 0.3

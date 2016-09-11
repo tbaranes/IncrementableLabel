@@ -33,44 +33,44 @@ public typealias IncrementableLabelCompletion = () -> Void
 @IBDesignable public class IncrementableLabel: UILabel {
 
     // MARK: Properties
-    
+
     /// An options indicating how you want to perform the incrementation:
     public var option: IncrementableLabelOptions = .Linear
-    
+
     /// A callback closure which permits a greater control on how the text (attributed or not) is formatted between each incrementation.
     public var stringFormatter: StringFormatter?
     public var attributedTextFormatter: AttributedTextFormatter?
-    
+
     /// The rate used when an option is used.
     @IBInspectable public var easingRate: Double = 3.0
-    
+
     /// The format is used to set the text in the label. You can set the format to %f in order to display decimals.
     @IBInspectable public var format: String = "%d" {
         didSet {
             updateText()
         }
     }
-    
+
     // MARK: Private properties
-    
-    private var timer: NSTimer?
-    private var fromValue: Double = 0.0
-    private var toValue: Double = 0.0
-    
-    private var duration: NSTimeInterval = 0.3
-    private var progress: NSTimeInterval = 0.0
-    private var lastUpdate: NSTimeInterval = 0.0
-    private var completion: IncrementableLabelCompletion?
-    
+
+    fileprivate var timer: Timer?
+    fileprivate var fromValue: Double = 0.0
+    fileprivate var toValue: Double = 0.0
+
+    fileprivate var duration: TimeInterval = 0.3
+    fileprivate var progress: TimeInterval = 0.0
+    fileprivate var lastUpdate: TimeInterval = 0.0
+    fileprivate var completion: IncrementableLabelCompletion?
+
     // MARK: Getter
-    
+
     /** The label's value during the incrementation */
     public func currentValue() -> Double {
         if progress >= duration {
             return toValue
         }
         let percent: Double = progress / duration
-        return fromValue + (nextValueForCurrentOption(percent) * (toValue - fromValue))
+        return fromValue + (nextValueForCurrentOption(value: percent) * (toValue - fromValue))
     }
 
 }
@@ -80,48 +80,47 @@ public typealias IncrementableLabelCompletion = () -> Void
 extension IncrementableLabel {
 
     /** Starts the incrementation fromValue to toValue */
-    public func incrementFromValue(fromValue: Double, toValue: Double, duration: Double = 0.3, completion: IncrementableLabelCompletion? = nil) {
+    public func increment(fromValue: Double, toValue: Double, duration: Double = 0.3, completion: IncrementableLabelCompletion? = nil) {
         self.completion = completion
-        startIncrementationFromValue(fromValue, toValue: toValue, duration: duration)
+        startIncrementation(fromValue: fromValue, toValue: toValue, duration: duration)
     }
-    
+
     /** Starts the incrementation from the current value to toValue */
-    public func incrementFromCurrentValueToValue(toValue: Double, duration: Double = 0.3, completion: IncrementableLabelCompletion? = nil) {
+    public func incrementFromCurrentValue(toValue: Double, duration: Double = 0.3, completion: IncrementableLabelCompletion? = nil) {
         self.completion = completion
-        startIncrementationFromValue(currentValue(), toValue: toValue, duration: duration)
+        startIncrementation(fromValue: currentValue(), toValue: toValue, duration: duration)
     }
-    
+
     /** Starts the incrementation from zero to toValue */
     public func incrementFromZero(toValue: Double, duration: Double = 0.3, completion: IncrementableLabelCompletion? = nil) {
         self.completion = completion
-        startIncrementationFromValue(0.0, toValue: toValue, duration: duration)
+        startIncrementation(fromValue: 0.0, toValue: toValue, duration: duration)
     }
-    
+
 }
 
-// MARK: - 
+// MARK: - Incrementation
 
-private extension IncrementableLabel {
-    
-    func startIncrementationFromValue(fromValue: Double, toValue: Double, duration: Double) {
+fileprivate extension IncrementableLabel {
+
+    func startIncrementation(fromValue: Double, toValue: Double, duration: Double) {
         self.fromValue = fromValue
         self.toValue = toValue
         self.duration = Double(duration)
         progress = 0
-        lastUpdate = NSDate.timeIntervalSinceReferenceDate()
-        
+        lastUpdate = NSDate.timeIntervalSinceReferenceDate
+
         self.timer?.invalidate()
         self.timer = nil
-        
-        
-        let timer = NSTimer.scheduledTimerWithTimeInterval(1.0/30.0, target: self, selector: #selector(incrementValue(_:)), userInfo: nil, repeats: true)
-        NSRunLoop.mainRunLoop().addTimer(timer, forMode: NSRunLoopCommonModes)
-        NSRunLoop.mainRunLoop().addTimer(timer, forMode: UITrackingRunLoopMode)
+
+        let timer = Timer.scheduledTimer(timeInterval: 1.0 / 30.0, target: self, selector: #selector(incrementValue), userInfo: nil, repeats: true)
+        RunLoop.main.add(timer, forMode: RunLoopMode.commonModes)
+        RunLoop.main.add(timer, forMode: RunLoopMode.UITrackingRunLoopMode)
         self.timer = timer
     }
 
-    @objc func incrementValue(sender: NSTimer) {
-        let now = NSDate.timeIntervalSinceReferenceDate()
+    @objc func incrementValue() {
+        let now = NSDate.timeIntervalSinceReferenceDate
         progress += now - lastUpdate
         lastUpdate = now
         if progress >= duration {
@@ -129,13 +128,13 @@ private extension IncrementableLabel {
             timer = nil
             progress = duration
         }
-        
+
         updateText()
         if progress == duration {
             completion?()
         }
     }
-    
+
     func updateText() {
         if let formatStringClosure = stringFormatter {
             text = formatStringClosure(currentValue())
@@ -143,46 +142,46 @@ private extension IncrementableLabel {
             attributedText = attributedTextClosure(currentValue())
         } else {
             let formatRange = Range<String.Index>(format.startIndex..<format.endIndex)
-            if format.rangeOfString("%(.*)(d|i)", options: .RegularExpressionSearch, range: formatRange) ==  formatRange {
+            if format.range(of: "%(.*)(d|i)", options: .regularExpression, range: formatRange) ==  formatRange {
                 text = String(format: format, Int(currentValue()))
             } else {
                 text = String(format: format, currentValue())
             }
         }
     }
-    
+
 }
 
 // MARK: Value helpers
 
 private extension IncrementableLabel {
-    
+
     // MARK: NextValue
-    
+
     func nextValueForCurrentOption(value: Double) -> Double {
         switch option {
-        case .Linear: return nextValueForLinearOption(value)
-        case .EaseIn: return nextValueForEaseInOption(value)
-        case .EaseOut: return nextValueForEaseInOutOption(value)
-        case .EaseInOut: return nextValueForEaseInOutOption(value)
+        case .Linear: return nextValueForLinearOption(value: value)
+        case .EaseIn: return nextValueForEaseInOption(value: value)
+        case .EaseOut: return nextValueForEaseInOutOption(value: value)
+        case .EaseInOut: return nextValueForEaseInOutOption(value: value)
         }
     }
-    
+
     func nextValueForLinearOption(value: Double) -> Double {
         return value
     }
-    
+
     func nextValueForEaseInOption(value: Double) -> Double {
         return Double(powf(Float(value), Float(easingRate)))
     }
-    
+
     func nextValueForEaseOutOption(value: Double) -> Double {
         return 1.0 - Double(powf(1.0 - Float(value), Float(easingRate)))
     }
-    
+
     func nextValueForEaseInOutOption(value: Double) -> Double {
         var value = value
-        let sign: Double = easingRate % 2 == 0 ?  -1 : 1
+        let sign: Double = easingRate.truncatingRemainder(dividingBy: 2) == 0 ?  -1 : 1
         value *= 2
         if value < 1 {
             return 0.5 * Double(powf(Float(value), Float(easingRate)))

@@ -29,28 +29,28 @@ class ViewController: UIViewController {
     // MARK: IBAction
     
     @IBAction func startIncrementationPressed(sender: AnyObject) {
-        label1.incrementFromValue(0, toValue: 100, duration: 3)
+        label1.increment(fromValue: 0, toValue: 100, duration: 3)
         
         label2.format = "%f"
-        label2.incrementFromValue(0.0, toValue: 100.0, duration: 3)
+        label2.increment(fromValue: 0.0, toValue: 100.0, duration: 3)
         
         label3.option = .EaseInOut
         label3.stringFormatter = { value in
             return String(format: "EaseInOutAnimation: %d", Int(value))
         }
-        label3.incrementFromValue(0.0, toValue: 100.0, duration: 3)
+        label3.increment(fromValue: 0.0, toValue: 100.0, duration: 3)
         
         label4.option = .EaseOut
         label4.attributedTextFormatter = { value in
             let string = String(format: "EaseOutAnimation + attributedString: %d", Int(value))
-            let attributedString = NSMutableAttributedString(string: string, attributes: [NSFontAttributeName: UIFont.boldSystemFontOfSize(16.0)])
+            let attributedString = NSMutableAttributedString(string: string, attributes: [NSFontAttributeName: UIFont.boldSystemFont(ofSize: 16.0)])
             return attributedString
         }
-        label4.incrementFromZero(1000, duration: 1)
+        label4.incrementFromZero(toValue: 1000, duration: 1)
         
-        label5.textColor = UIColor.blackColor()
-        label5.incrementFromZero(1000, duration: 1) {
-            self.label5.textColor = UIColor.greenColor()
+        label5.textColor = UIColor.black
+        label5.incrementFromZero(toValue: 1000, duration: 1) {
+            self.label5.textColor = UIColor.green
         }
     }
 
