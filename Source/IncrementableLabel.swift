@@ -23,7 +23,7 @@
 import UIKit
 
 public enum IncrementableLabelOptions {
-    case Linear, EaseIn, EaseOut, EaseInOut
+    case linear, easeIn, easeOut, easeInOut
 }
 
 public typealias StringFormatter = (Double) -> String
