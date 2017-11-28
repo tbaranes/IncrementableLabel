@@ -54,14 +54,14 @@ Just drag the `Source/*.swift` files into your project.
 ## IncrementableLabel properties
 
 ```swift
-var option: IncrementableLabelOptions = .Linear
+var option: IncrementableLabelOptions = .linear
 ```
 
 An options indicating how you want to perform the incrementation:
-- Linear
-- EaseIn
-- EaseOut
-- EaseInOut
+- linear
+- easeIn
+- easeOut
+- easeInOut
 
 ```swift
 typealias StringFormatter = (Float) -> String
@@ -85,13 +85,13 @@ var format: String = "%d"
 
 The format is used to set the text in the label. You can set the format to `%f` in order to display decimals.
 
-## IncrementableLabel methods
-
 ```swift
-public func currentValue() -> Float
+public var currentValue: Double
 ```
 
 The label's value during the incrementation 
+
+## IncrementableLabel methods
 
 ```swift
 func increment(fromValue: Float, toValue: Float, duration: Float = 0.3, completion: IncrementableLabelCompletion? = nil)
