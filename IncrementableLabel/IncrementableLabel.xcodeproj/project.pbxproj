@@ -13,8 +13,8 @@
 		E26980FF1CDEAADF001E9707 /* IncrementableLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E26980B31CDEA7A6001E9707 /* IncrementableLabel.framework */; };
 		E269810A1CDEAB4F001E9707 /* IncrementableLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26981091CDEAB4F001E9707 /* IncrementableLabelTests.swift */; };
 		E269810B1CDEAB4F001E9707 /* IncrementableLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26981091CDEAB4F001E9707 /* IncrementableLabelTests.swift */; };
-		E2A4B65D1D847663005E6710 /* IncrementableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A4B65C1D847663005E6710 /* IncrementableLabel.swift */; };
-		E2A4B65E1D847663005E6710 /* IncrementableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A4B65C1D847663005E6710 /* IncrementableLabel.swift */; };
+		E29CDB911FCD5960003BDD0A /* IncrementableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29CDB901FCD5960003BDD0A /* IncrementableLabel.swift */; };
+		E29CDB921FCD5960003BDD0A /* IncrementableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29CDB901FCD5960003BDD0A /* IncrementableLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +46,7 @@
 		E26980FA1CDEAADF001E9707 /* IncrementableLabel tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IncrementableLabel tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26980FE1CDEAADF001E9707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E26981091CDEAB4F001E9707 /* IncrementableLabelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncrementableLabelTests.swift; sourceTree = "<group>"; };
-		E2A4B65C1D847663005E6710 /* IncrementableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncrementableLabel.swift; sourceTree = "<group>"; };
+		E29CDB901FCD5960003BDD0A /* IncrementableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncrementableLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +86,7 @@
 		E26980861CDEA6DA001E9707 = {
 			isa = PBXGroup;
 			children = (
-				E2A4B65B1D847663005E6710 /* Source */,
+				E29CDB8F1FCD5960003BDD0A /* Source */,
 				E26980921CDEA6DB001E9707 /* IncrementableLabel iOS */,
 				E26980B41CDEA7A6001E9707 /* IncrementableLabel tvOS */,
 				E26980F51CDEAAC5001E9707 /* Tests */,
@@ -158,12 +158,13 @@
 			path = "IncrementableLabel Core Tests";
 			sourceTree = "<group>";
 		};
-		E2A4B65B1D847663005E6710 /* Source */ = {
+		E29CDB8F1FCD5960003BDD0A /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				E2A4B65C1D847663005E6710 /* IncrementableLabel.swift */,
+				E29CDB901FCD5960003BDD0A /* IncrementableLabel.swift */,
 			);
-			path = Source;
+			name = Source;
+			path = ../Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,7 +355,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "swiftlint --config ../.swiftlint.yml";
 		};
 		E2773E981D20128600365CDF /* Run Script - ⚠️ SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -368,7 +369,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "swiftlint --config ../.swiftlint.yml";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -377,7 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2A4B65D1D847663005E6710 /* IncrementableLabel.swift in Sources */,
+				E29CDB911FCD5960003BDD0A /* IncrementableLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,7 +386,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2A4B65E1D847663005E6710 /* IncrementableLabel.swift in Sources */,
+				E29CDB921FCD5960003BDD0A /* IncrementableLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

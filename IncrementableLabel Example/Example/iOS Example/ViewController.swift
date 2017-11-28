@@ -34,13 +34,13 @@ class ViewController: UIViewController {
         label2.format = "%f"
         label2.increment(fromValue: 0.0, toValue: 100.0, duration: 3)
         
-        label3.option = .EaseInOut
+        label3.option = .easeInOut
         label3.stringFormatter = { value in
             return String(format: "EaseInOutAnimation: %d", Int(value))
         }
         label3.increment(fromValue: 0.0, toValue: 100.0, duration: 3)
         
-        label4.option = .EaseOut
+        label4.option = .easeOut
         label4.attributedTextFormatter = { value in
             let string = String(format: "EaseOutAnimation + attributedString: %d", Int(value))
             let attributedString = NSMutableAttributedString(string: string, attributes: [NSFontAttributeName: UIFont.boldSystemFont(ofSize: 16.0)])
