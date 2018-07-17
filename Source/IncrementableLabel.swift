@@ -143,7 +143,7 @@ extension IncrementableLabel {
         } else if let attributedTextClosure = attributedTextFormatter {
             attributedText = attributedTextClosure(currentValue)
         } else {
-            let formatRange = Range<String.Index>(format.startIndex..<format.endIndex)
+            let formatRange = format.startIndex..<format.endIndex
             if format.range(of: "%(.*)(d|i)", options: .regularExpression, range: formatRange) == formatRange {
                 text = String(format: format, Int(currentValue))
             } else {
