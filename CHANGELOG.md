@@ -9,6 +9,7 @@ All notable changes to the project will be documented in this file.
 #### API breaking changes
 
 - Swift 4 and Xcode 9 support
+- Swift 4.2 and Xcode 10 support
 
 ## [1.2.0](https://github.com/tbaranes/IncrementableLabel/releases/tag/1.2.0) (11-09-2016)
 

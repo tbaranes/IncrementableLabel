@@ -115,8 +115,8 @@ extension IncrementableLabel {
         self.timer = nil
 
         let timer = Timer.scheduledTimer(timeInterval: 1.0 / 30.0, target: self, selector: #selector(incrementValue), userInfo: nil, repeats: true)
-        RunLoop.main.add(timer, forMode: RunLoopMode.commonModes)
-        RunLoop.main.add(timer, forMode: RunLoopMode.UITrackingRunLoopMode)
+        RunLoop.main.add(timer, forMode: RunLoop.Mode.common)
+        RunLoop.main.add(timer, forMode: RunLoop.Mode.tracking)
         self.timer = timer
     }
 
