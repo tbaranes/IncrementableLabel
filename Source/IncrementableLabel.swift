@@ -62,6 +62,9 @@ public class IncrementableLabel: UILabel {
     private var progress: TimeInterval = 0.0
     private var lastUpdate: TimeInterval = 0.0
     private var completion: Completion?
+    
+    private var startColor: UIColor?
+    private var endColor: UIColor?
 
     // MARK: Getter
 
@@ -83,6 +86,13 @@ extension IncrementableLabel {
     /** Starts the incrementation fromValue to toValue */
     public func increment(fromValue: Double, toValue: Double, duration: Double = 0.3, completion: Completion? = nil) {
         self.completion = completion
+        startIncrementation(fromValue: fromValue, toValue: toValue, duration: duration)
+    }
+    
+    public func increment(fromValue: Double, toValue: Double, startColor: UIColor, endColor: UIColor, duration: Double = 0.3, completion: Completion? = nil) {
+        self.completion = completion
+        self.startColor = startColor
+        self.endColor = endColor
         startIncrementation(fromValue: fromValue, toValue: toValue, duration: duration)
     }
 
@@ -119,6 +129,29 @@ extension IncrementableLabel {
         RunLoop.main.add(timer, forMode: RunLoop.Mode.tracking)
         self.timer = timer
     }
+    
+    //From https://stackoverflow.com/a/39779603
+    private func blend(from: UIColor, to: UIColor, percent: Double) -> UIColor {
+        var fR : CGFloat = 0.0
+        var fG : CGFloat = 0.0
+        var fB : CGFloat = 0.0
+        var tR : CGFloat = 0.0
+        var tG : CGFloat = 0.0
+        var tB : CGFloat = 0.0
+        
+        from.getRed(&fR, green: &fG, blue: &fB, alpha: nil)
+        to.getRed(&tR, green: &tG, blue: &tB, alpha: nil)
+        
+        let dR = tR - fR
+        let dG = tG - fG
+        let dB = tB - fB
+        
+        let rR = fR + dR * CGFloat(percent)
+        let rG = fG + dG * CGFloat(percent)
+        let rB = fB + dB * CGFloat(percent)
+        
+        return UIColor(red: rR, green: rG, blue: rB, alpha: 1.0)
+    }
 
     @objc
     private func incrementValue() {
@@ -149,6 +182,10 @@ extension IncrementableLabel {
             } else {
                 text = String(format: format, currentValue)
             }
+        }
+        //Update the color
+        if startColor != nil && endColor != nil{
+            textColor = blend(from: startColor!, to: endColor!, percent: progress / duration)
         }
     }
 
