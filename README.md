@@ -94,19 +94,19 @@ The label's value during the incrementation
 ## IncrementableLabel methods
 
 ```swift
-func increment(fromValue: Float, toValue: Float, duration: Float = 0.3, completion: IncrementableLabelCompletion? = nil)
+func increment(fromValue: Float, toValue: Float, duration: Float = 0.3, fromColor: UIColor? = nil, toColor: UIColor? = nil, completion: IncrementableLabelCompletion? = nil)
 ```
 
-Starts the incrementation `fromValue` to `toValue`. The duration by default will be 0.3
+Starts the incrementation `fromValue` to `toValue`, and the text color changes from `fromColor` to `toColor`. The duration by default will be 0.3
 
 ```swift
-func incrementFromCurrentValue(toValue: Float, duration: Float = 0.3, completion: IncrementableLabelCompletion? = nil)
+func incrementFromCurrentValue(toValue: Float, duration: Float = 0.3, fromColor: UIColor? = nil, toColor: UIColor? = nil, completion: IncrementableLabelCompletion? = nil)
 ```
 
 Starts the incrementation from the current value to `toValue`. The duration by default will be 0.3
 
 ```swift
-func incrementFromZero(toValue: Float, duration: Float = 0.3, completion: IncrementableLabelCompletion? = nil)
+func incrementFromZero(toValue: Float, duration: Float = 0.3, fromColor: UIColor? = nil, toColor: UIColor? = nil, completion: IncrementableLabelCompletion? = nil)
 ```
 
 Starts the incrementation from zero to `toValue`. The duration by default will be 0.3
