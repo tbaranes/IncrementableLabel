@@ -12,7 +12,7 @@ N/A
 
 #### Enhancements
 
-N/A
+- Added optional variables for three increment methods to add color change animations. Created the UIColor+Blend extension to calculate the color at a certain percentage.
 
 ## [3.0.0](https://github.com/tbaranes/IncrementableLabel/releases/tag/3.0.0) (18-09-2018)
 

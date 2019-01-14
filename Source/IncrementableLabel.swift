@@ -62,6 +62,9 @@ public class IncrementableLabel: UILabel {
     private var progress: TimeInterval = 0.0
     private var lastUpdate: TimeInterval = 0.0
     private var completion: Completion?
+    
+    private var fromColor: UIColor?
+    private var toColor: UIColor?
 
     // MARK: Getter
 
@@ -81,20 +84,26 @@ public class IncrementableLabel: UILabel {
 extension IncrementableLabel {
 
     /** Starts the incrementation fromValue to toValue */
-    public func increment(fromValue: Double, toValue: Double, duration: Double = 0.3, completion: Completion? = nil) {
+    public func increment(fromValue: Double, toValue: Double, duration: Double = 0.3, fromColor: UIColor? = nil, toColor: UIColor? = nil, completion: Completion? = nil) {
         self.completion = completion
+        self.fromColor = fromColor
+        self.toColor = toColor
         startIncrementation(fromValue: fromValue, toValue: toValue, duration: duration)
     }
 
     /** Starts the incrementation from the current value to toValue */
-    public func incrementFromCurrentValue(toValue: Double, duration: Double = 0.3, completion: Completion? = nil) {
+    public func incrementFromCurrentValue(toValue: Double, duration: Double = 0.3, fromColor: UIColor? = nil, toColor: UIColor? = nil, completion: Completion? = nil) {
         self.completion = completion
+        self.fromColor = fromColor
+        self.toColor = toColor
         startIncrementation(fromValue: currentValue, toValue: toValue, duration: duration)
     }
 
     /** Starts the incrementation from zero to toValue */
-    public func incrementFromZero(toValue: Double, duration: Double = 0.3, completion: Completion? = nil) {
+    public func incrementFromZero(toValue: Double, duration: Double = 0.3, fromColor: UIColor? = nil, toColor: UIColor? = nil, completion: Completion? = nil) {
         self.completion = completion
+        self.fromColor = fromColor
+        self.toColor = toColor
         startIncrementation(fromValue: 0.0, toValue: toValue, duration: duration)
     }
 
@@ -149,6 +158,10 @@ extension IncrementableLabel {
             } else {
                 text = String(format: format, currentValue)
             }
+        }
+        //Update the color
+        if let fromColor = fromColor, let toColor = toColor {
+            textColor = fromColor.blend(to: toColor, percent: progress / duration)
         }
     }
 

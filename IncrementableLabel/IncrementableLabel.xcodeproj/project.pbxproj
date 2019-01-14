@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DAC3D32F21E900E600A1F307 /* UIColor+Blend.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC3D32E21E900E600A1F307 /* UIColor+Blend.swift */; };
+		DAC3D33021E900E900A1F307 /* UIColor+Blend.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC3D32E21E900E600A1F307 /* UIColor+Blend.swift */; };
 		E26980941CDEA6DB001E9707 /* IncrementableLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = E26980931CDEA6DB001E9707 /* IncrementableLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E26980B61CDEA7A6001E9707 /* IncrementableLabel tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = E26980B51CDEA7A6001E9707 /* IncrementableLabel tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E26980EF1CDEAAB3001E9707 /* IncrementableLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E26980901CDEA6DB001E9707 /* IncrementableLabel.framework */; };
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DAC3D32E21E900E600A1F307 /* UIColor+Blend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Blend.swift"; sourceTree = "<group>"; };
 		E26980901CDEA6DB001E9707 /* IncrementableLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IncrementableLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26980931CDEA6DB001E9707 /* IncrementableLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IncrementableLabel.h; sourceTree = "<group>"; };
 		E26980951CDEA6DB001E9707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -162,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				E29CDB901FCD5960003BDD0A /* IncrementableLabel.swift */,
+				DAC3D32E21E900E600A1F307 /* UIColor+Blend.swift */,
 			);
 			name = Source;
 			path = ../Source;
@@ -379,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E29CDB911FCD5960003BDD0A /* IncrementableLabel.swift in Sources */,
+				DAC3D32F21E900E600A1F307 /* UIColor+Blend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +392,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E29CDB921FCD5960003BDD0A /* IncrementableLabel.swift in Sources */,
+				DAC3D33021E900E900A1F307 /* UIColor+Blend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
