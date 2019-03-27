@@ -12,8 +12,21 @@ N/A
 
 #### Enhancements
 
-- Added optional variables for three increment methods to add color change animations. Created the UIColor+Blend extension to calculate the color at a certain percentage.
+N/A
+
+#### Bug fix
+
+N/A
+
+## [4.0.0](https://github.com/tbaranes/IncrementableLabel/releases/tag/4.0.0) (27-03-2019)
+
+#### API breaking changes
+
 - Xcode 10.2 and swift 5 support
+
+#### Enhancements
+
+- Added optional variables for three increment methods to add color change animations. Created the UIColor+Blend extension to calculate the color at a certain percentage.
 
 ## [3.0.0](https://github.com/tbaranes/IncrementableLabel/releases/tag/3.0.0) (18-09-2018)
 
